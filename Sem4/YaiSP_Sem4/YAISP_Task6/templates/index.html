@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+    <title>Судоку</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        <h1 class="header__text">
+            РЕШАТЕЛЬ СУДОКУ ОНЛАЙН
+        </h1>
+    </header>
+    <main>
+        <div class="about__sudoku">
+            <img class="about__sudoku__image" src="{{url_for('static', filename='sudoku_example.png')}}">
+            <p class="about__sudoku__text">Судоку — это головоломка с числами, основанная на "латинском квадрате".
+                Игровое поле представляет собой квадрат размером 9×9, разделённый на меньшие квадраты со стороной в 3 клетки. В начале игры в клетках стоят числа от 1 до 9, называемые подсказками.
+                Задача игрока — заполнить свободные клетки цифрами от 1 до 9 так, чтобы в каждой строке, в каждом столбце и в каждом малом квадрате 3×3 каждая цифра встречалась только один раз.
+                Судоку активно публикуют газеты и журналы многих стран мира, сборники судоку издаются большими тиражами. Решение судоку является популярным видом досуга</p>
+        </div>
+        <div class="divider"></div>
+        <div class="solver">
+            <h1 class="solver__header__text">Решить судоку 9х9</h1>
+            <div class="field__container">
+
+            </div>
+            <div class="control__buttons__container">
+                <button class="solve__button">РЕШИТЬ</button>
+                <button class="clear__button">ОЧИСТИТЬ</button>
+            </div>
+            <p class="choose__size__header">Выбрать размер поля: </p>
+            <div class="size__buttons__container">
+                <input type="radio" name="size_button" class="size__button" value="2" id="button_2x2">
+                <label for="button_2x2" class="size__button__label">2x2</label>
+                <input type="radio" name="size_button" class="size__button" value="3" id="button_3x3">
+                <label for="button_3x3" class="size__button__label">3x3</label>
+                <input type="radio" name="size_button" class="size__button" value="4" id="button_4x4">
+                <label for="button_4x4" class="size__button__label">4x4</label>
+                <input type="radio" name="size_button" class="size__button" value="5" id="button_5x5">
+                <label for="button_5x5" class="size__button__label">5x5</label>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="{{url_for('static', filename='script.js')}}"></script>
+</html>

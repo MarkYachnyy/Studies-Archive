@@ -1,0 +1,24 @@
+--упр.1 (Напишите запрос с подзапросом для получения всех оценок студента с фамилией Иванов. Предположим, что его персональный номер неизвестен. Всегда ли такой запрос будет корректным?)
+SELECT * FROM exam_marks ex WHERE 'Иванов' = (SELECT st.surname FROM student st WHERE st.student_id = ex.student_id);
+
+--упр.2 пустой результат (должно быть 94)
+SELECT DISTINCT st.name FROM student st WHERE (SELECT AVG(ex.mark) FROM exam_marks ex WHERE ex.student_id = st.student_id GROUP BY ex.subj_id HAVING ex.subj_id = 5) > 
+(SELECT AVG(ex.mark) FROM exam_marks ex WHERE ex.student_id = st.student_id);
+
+--упр.3 (Напишите запрос, который выполняет выборку имен всех студентов, имеющих по предмету c идентификатором 102 балл ниже общего среднего балла)
+SELECT DISTINCT st.name FROM student st WHERE (SELECT AVG(ex.mark) FROM exam_marks ex WHERE ex.student_id = st.student_id GROUP BY ex.subj_id HAVING ex.subj_id = 12) < 
+(SELECT AVG(ex.mark) FROM exam_marks ex);
+
+--упр.4 (Напишите запрос, выполняющий вывод количества предметов, по которым экзаменовался каждый студент, сдававший более 20 предметов.)
+SELECT ex.student_id, COUNT(DISTINCT ex.subj_id) FROM exam_marks ex WHERE ex.mark > 2 GROUP BY ex.student_id HAVING COUNT(DISTINCT ex.subj_id) > 2; 
+
+--упр.5 (Напишите команду SELECT, использующую связанные подзапросы и выполняющую вывод имен и идентификаторов студентов, у которых стипендия совпадает с максимальным значением стипендии для города, в котором живет студент.)
+SELECT DISTINCT st1.name, st1.student_id FROM student st1 WHERE st1.stipend = (SELECT MAX(st2.stipend) FROM student st2 GROUP BY st2.city HAVING st2.city = st1.city);
+
+--упр.6 (Напишите запрос, который позволяет вывести имена и идентификаторы всех студентов, о которых точно известно, что они проживают в городе, где нет ни одного университета)
+SELECT st.name, st.student_id FROM student st WHERE st.city IS NOT NULL AND st.city IN 
+(SELECT DISTINCT un.city FROM university un WHERE un.city IS NOT NULL AND 0 < (SELECT COUNT(*) FROM university un2 WHERE un2.city = un.city));
+
+--упр.7 (Напишите два запроса, которые позволяют вывести имена и идентификаторы всех студентов, о которых точно известно, что они проживают не в том городе, где расположен их университет)
+SELECT DISTINCT st.name, st.student_id FROM student st WHERE st.city IS NOT NULL AND st.city != (SELECT un.city FROM university un WHERE un.univ_id = st.univ_id AND un.city IS NOT NULL);
+SELECT DISTINCT st.name, st.student_id FROM student st, university un WHERE st.univ_id = un.univ_id AND st.city != un.city AND st.city IS NOT NULL AND un.city IS NOT NULL AND st.univ_id IS NOT NULL;

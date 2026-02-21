@@ -1,0 +1,19 @@
+#SPDX-License-Identifier: MIT-0
+---
+# vars file for roles/root_ca
+
+root_ca_certs_dir: /etc/ssl/certs
+
+root_ca_key_path: "{{ root_ca_certs_dir }}/rootCA.key"
+root_ca_key_size: 2048
+
+root_ca_not_after: +3650d
+root_ca_cert_path: "{{ root_ca_certs_dir }}/rootCA.pem"
+
+root_ca_country: RU
+root_ca_state: VoronezhOblast
+root_ca_locality: Voronezh
+root_ca_organization: VoronezhStateUniversity
+root_ca_organization_unit: CSF
+root_ca_email: nikita.agafonov@gmail.com
+root_ca_common_name: CSFCA

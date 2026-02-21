@@ -1,0 +1,35 @@
+.nav__link{
+    height: 100%;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+
+    margin-left: 46px;
+}
+.navigation__bar{
+    display: flex;
+}
+.image__product{
+    height: 500px;
+    border-radius: 10px;
+}
+.div__in__cart{
+    display: flex;
+    align-items: center;
+}
+.button__add__to__cart, .button__minus__one, .button__plus__one {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: blue;
+    margin: 5px;
+    color: white;
+}
+.button__minus__one, .button__plus__one{
+    display: none;
+}

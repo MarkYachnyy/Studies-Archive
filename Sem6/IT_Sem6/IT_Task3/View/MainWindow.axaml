@@ -1,0 +1,83 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:viewModels="clr-namespace:BusFlowApp.ViewModels"
+        x:Class="BusFlowApp.Views.MainWindow"
+        x:DataType="viewModels:MainWindowViewModel"
+        Title="BusFlowApp" Width="1080" Height="720">
+
+    <Grid RowDefinitions="Auto, Auto, *" x:Name="Root">
+
+        <Canvas Grid.Row="0" Height="300">
+
+            <Image Source="avares://BusFlowApp/Assets/street.jpg"
+                   Width="1280" Height="600"
+                   Canvas.Left="0" Canvas.Top="-300"
+                   Stretch="Fill" />
+
+            <Image Source="avares://BusFlowApp/Assets/bus_stop.png"
+                   Width="200" Height="100"
+                   Canvas.Left="100" Canvas.Top="75"
+                   Stretch="Fill" />
+
+
+            <ItemsControl ItemsSource="{Binding VisualPassengers}"
+                          Width="1280" Height="720">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Canvas Width="1280" Height="720" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+
+                <ItemsControl.Styles>
+                    <Style Selector="ContentPresenter" x:DataType="viewModels:VisiblePassenger">
+                        <Setter Property="Canvas.Left" Value="{Binding X}" />
+                        <Setter Property="Canvas.Top" Value="{Binding Y}" />
+                    </Style>
+                </ItemsControl.Styles>
+
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <Image Source="avares://BusFlowApp/Assets/woman.png"
+                                   Width="60" Height="60" IsVisible="{Binding IsWoman}"/>
+                            <Image Source="avares://BusFlowApp/Assets/man.png"
+                                   Width="60" Height="60" IsVisible="{Binding IsMan}"/>
+                            <Image Source="avares://BusFlowApp/Assets/disabled.png"
+                                   Width="60" Height="60" IsVisible="{Binding IsDisabled}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+
+            <Canvas x:Name="BusPanel"
+                    Width="200" Height="100"
+                    Canvas.Top="75"
+                    Background="Transparent"
+                    Canvas.Left="{Binding BusX}">
+
+                <Image Source="avares://BusFlowApp/Assets/bus.png"
+                       Width="560" Height="150"
+                       Stretch="Fill" />
+            </Canvas>
+        </Canvas>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10" Spacing="10" HorizontalAlignment="Center">
+            <Border CornerRadius="5" BorderThickness="5" Background="#EEEEEE" Margin="10,0">
+                <Button Content="Добавить мужчину" Command="{Binding AddManCommand}" />
+            </Border>
+            <Border CornerRadius="5" BorderThickness="5" Background="#EEEEEE" Margin="10,0">
+                <Button Content="Добавить женщину" Command="{Binding AddWomanCommand}" />
+            </Border>
+
+            <Border CornerRadius="5" BorderThickness="5" Background="#EEEEEE" Margin="10,0">
+                <Button Content="Добавить инвалида" Command="{Binding AddDisabledCommand}" />
+            </Border>
+
+        </StackPanel>
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+            <ListBox ItemsSource="{Binding Log}" Margin="10" Background="White" />
+        </ScrollViewer>
+
+    </Grid>
+
+</Window>

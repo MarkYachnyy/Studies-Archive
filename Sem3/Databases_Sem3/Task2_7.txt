@@ -1,0 +1,20 @@
+--упр.1а
+--SELECT name, surname, stipend * 1.2 FROM student ORDER BY 3;
+--упр.1б
+--SELECT name, surname, stipend * 1.2 FROM student ORDER BY surname;
+--упр.2а
+--SELECT student_id, min(mark) FROM exam_marks GROUP BY student_id;
+--упр.2б
+--SELECT student_id, max(mark) FROM exam_marks GROUP BY student_id;
+--упр.3a
+--SELECT semester, subj_name, subj_id FROM subject ORDER BY semester DESC;
+--упр.3б
+--SELECT semester, subj_name, subj_id FROM subject ORDER BY hour ASC;
+--упр.4
+--SELECT exam_date, SUM(mark) FROM exam_marks GROUP BY exam_date ORDER BY 2 DESC;
+--упр.5a
+--SELECT exam_date, AVG(mark) FROM exam_marks GROUP BY exam_date ORDER BY 2 DESC;
+--упр.5б
+--SELECT exam_date, MIN(mark) FROM exam_marks GROUP BY exam_date ORDER BY 2 DESC;
+--упр.5в
+--SELECT exam_date, MAX(mark) FROM exam_marks GROUP BY exam_date ORDER BY 2 DESC;

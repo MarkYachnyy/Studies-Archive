@@ -1,0 +1,146 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModel="clr-namespace:IT_Task2.ViewModel"
+        mc:Ignorable="d"
+        x:Class="IT_Task2.MainWindow"
+        x:DataType="viewModel:MainWindowViewModel"
+        Title="IT_Task1">
+    <Design.DataContext>
+        <viewModel:MainWindowViewModel />
+    </Design.DataContext>
+    <Grid ColumnDefinitions="*, Auto" x:Name="Root">
+        <Grid Grid.Column="0" RowDefinitions="Auto, Auto, Auto, *">
+            <TextBlock Grid.Row="0" FontSize="20" TextAlignment="Center" Margin="5">Добавить фигуру</TextBlock>
+            <Grid Grid.Row="1" ColumnDefinitions="Auto, Auto" RowDefinitions="Auto, Auto, Auto, Auto">
+                <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal" Margin="10">
+                    <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *, *, *">
+                        <TextBlock Grid.Row="0" Grid.Column="0" TextAlignment="Center">X1</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="1" TextAlignment="Center">Y1</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" TextAlignment="Center">X2</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="3" TextAlignment="Center">Y2</TextBlock>
+
+                        <NumericUpDown Margin="5" Grid.Row="1" Grid.Column="0" Value="{Binding LineX1}"></NumericUpDown>
+                        <NumericUpDown Margin="5" Grid.Row="1" Grid.Column="1" Value="{Binding LineY1}"></NumericUpDown>
+                        <NumericUpDown Margin="5" Grid.Row="1" Grid.Column="2" Value="{Binding LineX2}"></NumericUpDown>
+                        <NumericUpDown Margin="5" Grid.Row="1" Grid.Column="3" Value="{Binding LineY2}"></NumericUpDown>
+                    </Grid>
+                </StackPanel>
+                <Button Grid.Column="1" Grid.Row="0" Command="{Binding AddLineCommand}">Добавить линию</Button>
+
+                <StackPanel Grid.Column="0" Grid.Row="1" Orientation="Horizontal" Margin="10">
+                    <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *">
+                        <TextBlock Grid.Row="0" Grid.Column="0" TextAlignment="Center">X</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="1" TextAlignment="Center">Y</TextBlock>
+
+                        <NumericUpDown Margin="5" Grid.Row="1" Grid.Column="0" Value="{Binding PointX}"></NumericUpDown>
+                        <NumericUpDown Margin="5" Grid.Row="1" Grid.Column="1" Value="{Binding PointY}"></NumericUpDown>
+                    </Grid>
+                </StackPanel>
+                <Button Grid.Column="1" Grid.Row="1" Command="{Binding AddPointCommand}">Добавить точку</Button>
+
+                <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal" Margin="10">
+                    <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *, *, *">
+                        <TextBlock Grid.Row="0" Grid.Column="0" TextAlignment="Center">X</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="1" TextAlignment="Center">Y</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" TextAlignment="Center">Rx</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="3" TextAlignment="Center">Ry</TextBlock>
+
+                        <NumericUpDown Margin="5" Grid.Row="1" Grid.Column="0" Value="{Binding EllipseX}"></NumericUpDown>
+                        <NumericUpDown Margin="5" Grid.Row="1" Grid.Column="1" Value="{Binding EllipseY}"></NumericUpDown>
+                        <NumericUpDown Margin="5" Grid.Row="1" Grid.Column="2" Value="{Binding EllipseRX}"></NumericUpDown>
+                        <NumericUpDown Margin="5" Grid.Row="1" Grid.Column="3" Value="{Binding EllipseRY}"></NumericUpDown>
+                    </Grid>
+                </StackPanel>
+                <Button Grid.Column="1" Grid.Row="2" Command="{Binding AddEllipseCommand}">Добавить эллипс</Button>
+
+                <StackPanel Grid.Column="0" Grid.Row="3" Orientation="Horizontal" Margin="10">
+                    <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *, *, *">
+                        <TextBlock Grid.Row="0" Grid.Column="0" TextAlignment="Center">X</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="1" TextAlignment="Center">Y</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="2" TextAlignment="Center">Ширина</TextBlock>
+                        <TextBlock Grid.Row="0" Grid.Column="3" TextAlignment="Center">Высота</TextBlock>
+
+                        <NumericUpDown Margin="5" Grid.Row="1" Grid.Column="0" Value="{Binding RectangleX}"></NumericUpDown>
+                        <NumericUpDown Margin="5" Grid.Row="1" Grid.Column="1" Value="{Binding RectangleY}"></NumericUpDown>
+                        <NumericUpDown Margin="5" Grid.Row="1" Grid.Column="2" Value="{Binding RectangleW}"></NumericUpDown>
+                        <NumericUpDown Margin="5" Grid.Row="1" Grid.Column="3" Value="{Binding RectangleH}"></NumericUpDown>
+                    </Grid>
+
+                </StackPanel>
+                <Button Grid.Column="1" Grid.Row="3" Command="{Binding AddRectangleCommand}">Добавить прямоугольник</Button>
+
+            </Grid>
+            <TextBlock Grid.Row="2" FontSize="20" TextAlignment="Center">Добавленные фигуры</TextBlock>
+            <ScrollViewer Grid.Row="3" VerticalScrollBarVisibility="Auto">
+                <ItemsControl ItemsSource="{CompiledBinding Figures}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border CornerRadius="5" BorderThickness="5" Background="#EEEEEE" Margin="2">
+                                <Grid ColumnDefinitions="Auto, *" Background="#EEEEEE" Margin="5">
+                                    <Border CornerRadius="5" BorderThickness="5" Background="LightGray" Grid.Column="0">
+                                        <StackPanel Orientation="Vertical" Background="LightGray">
+                                            <StackPanel Orientation="Horizontal" Margin="5">
+                                                <TextBlock Text="{Binding Description}"></TextBlock>
+                                                <TextBlock Text=" с центром в точке ("></TextBlock>
+                                                <TextBlock Text="{Binding CenterX}"></TextBlock>
+                                                <TextBlock Text="; "></TextBlock>
+                                                <TextBlock Text="{Binding CenterY}"></TextBlock>
+                                                <TextBlock Text=")"></TextBlock>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal" Margin="5">
+                                                <TextBlock Text="Ограничен прямоугольником "></TextBlock>
+                                                <TextBlock Text="{Binding BoundingRectangle}"></TextBlock>
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </Border>
+                                    <Button Grid.Column="1"
+                                            Command="{Binding #Root.((viewModel:MainWindowViewModel)DataContext).RemoveFigureCommand}"
+                                            CommandParameter="{Binding .}" Background="White" Foreground="Red"
+                                            Margin="5"
+                                            HorizontalAlignment="Right">
+                                        Удалить фигуру
+                                    </Button>
+                                </Grid>
+                            </Border>
+
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+
+        </Grid>
+        <StackPanel Grid.Column="1" Spacing="15" HorizontalAlignment="Left" Margin="10 0">
+            <TextBlock Text="Путь к dll:" FontSize="14" HorizontalAlignment="Left" />
+            <TextBox Text="{Binding DllPath}" Width="300" HorizontalAlignment="Left" />
+            <Button Content="Загрузить dll" Command="{Binding LoadDllCommand}" Width="130" HorizontalAlignment="Left" />
+
+
+            <TextBlock Text="Выберите геом. фигуру:" FontSize="14" HorizontalAlignment="Left" />
+            <ComboBox ItemsSource="{Binding FigureClassNames}"
+                      SelectedItem="{Binding SelectedFigureClass}"
+                      Width="200" HorizontalAlignment="Left" />
+
+            <Button Content="Создать объект" Command="{Binding CreateSelectedFigureCommand}" Width="150"
+                    HorizontalAlignment="Left" />
+            
+
+            <TextBlock Text="Выберите метод:" FontSize="14" HorizontalAlignment="Left" />
+            <ComboBox ItemsSource="{Binding MethodInformations}"
+                      SelectedItem="{Binding SelectedMethod}"
+                      Width="200" HorizontalAlignment="Left" />
+
+            <Button Content="Выполнить метод" Command="{Binding ExecuteSelectedActionCommand}" Width="150"
+                    HorizontalAlignment="Left" />
+            
+            <TextBlock Text="Значение параметра:" FontSize="14" HorizontalAlignment="Left"/>
+            <TextBox Text="{Binding ParamValue}"></TextBox>
+            
+            <TextBlock Text="{Binding MethodExecutionResult}" FontSize="14" HorizontalAlignment="Left" ></TextBlock>
+            <TextBlock Text="{Binding ActionResult}" FontSize="14" Foreground="Green" HorizontalAlignment="Left"/>
+            
+        </StackPanel>
+    </Grid>
+
+</Window>

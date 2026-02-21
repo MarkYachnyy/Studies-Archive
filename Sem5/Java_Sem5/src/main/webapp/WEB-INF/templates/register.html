@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Создать аккаунт</title>
+</head>
+<body>
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/utils.js"></script>
+
+    <p>Создать аккаунт</p>
+    <div class="">
+
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" class="input__username"/>
+        <br/>
+
+        <label for="email">Электронная почта:</label>
+        <input type="text" id="email" class="input__email"/>
+        <br/>
+
+        <label for="password">Пароль:</label>
+        <input type="text" id="password" class="input__password"/>
+        <br/>
+
+        <label for="passwordConfirm">Подтвердите пароль:</label>
+        <input type="text" id="passwordConfirm" class="input__password__confirm"/>
+        <br/>
+
+        <button type="submit" class="button__register">Зарегистрировать</button>
+        <p class="text__server__respose" style="display: none">Value</p>
+
+    </div>
+
+    <a href="login" class="link__login" style="margin-top: 10px;">Уже есть аккаунт? Войти</a>
+
+    <script type="text/javascript" src="/static/js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+D:\IT_Sem6\IT_Task4\ClassLibrary\bin\Debug\net9.0\ClassLibrary.deps.json
+D:\IT_Sem6\IT_Task4\ClassLibrary\bin\Debug\net9.0\ClassLibrary.dll
+D:\IT_Sem6\IT_Task4\ClassLibrary\bin\Debug\net9.0\ClassLibrary.pdb
+D:\IT_Sem6\IT_Task4\ClassLibrary\obj\Debug\net9.0\ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\IT_Sem6\IT_Task4\ClassLibrary\obj\Debug\net9.0\ClassLibrary.AssemblyInfoInputs.cache
+D:\IT_Sem6\IT_Task4\ClassLibrary\obj\Debug\net9.0\ClassLibrary.AssemblyInfo.cs
+D:\IT_Sem6\IT_Task4\ClassLibrary\obj\Debug\net9.0\ClassLibrary.csproj.CoreCompileInputs.cache
+D:\IT_Sem6\IT_Task4\ClassLibrary\obj\Debug\net9.0\ClassLibrary.dll
+D:\IT_Sem6\IT_Task4\ClassLibrary\obj\Debug\net9.0\refint\ClassLibrary.dll
+D:\IT_Sem6\IT_Task4\ClassLibrary\obj\Debug\net9.0\ClassLibrary.pdb
+D:\IT_Sem6\IT_Task4\ClassLibrary\obj\Debug\net9.0\ref\ClassLibrary.dll
+D:\IT_Sem6\IT_Task4\ClassLibrary\obj\Debug\net9.0\ClassLibrary.sourcelink.json

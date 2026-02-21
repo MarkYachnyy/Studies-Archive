@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusHub</title>
+    <link rel="stylesheet" href="style_gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="zoom__overlay">
+        <button class="zoom__overlay__close__btn"><img src="icons/icon_close.png" class="zoom__overlay__close__btn__img"></button>
+        <img class="zoomed__image" src="https://riavrn.ru/i/7f/7fa21cc719560d52da0e901b7c2505ee.jpg">
+    </div>
+    <div class="enter__overlay">
+        <div class="enter__overlay__content enter__overlay__unlogged">
+            <h1 class="enter__overlay__header">Войти на сайт</h1>
+            <input class="enter__login__input" placeholder="Логин">
+            <input class="enter__password__input" placeholder="Пароль" type="password">
+            <div class="enter__overlay__buttons">
+                <button class="enter__overlay__btn__cancel">Отмена</button>
+                <button class="enter__overlay__btn__enter">Войти</button>
+            </div>
+        </div>
+        <div class="enter__overlay__content enter__overlay__logged">
+            <h1 class="enter__overlay__header">Выполнен вход на сайт под логином <span class="enter__overlay__username__span"></span></h1>
+            <div class="enter__overlay__buttons">
+                <button class="enter__overlay__ok__button">OK</button>
+                <button class="enter__overlay__unlog__button">Выйти</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="../main/index.html" class="logo__upper">
+                Bus<span class="logo__upper__span">Hub</span>
+            </a>
+            <p class="logo__lower">
+                Место для каждого<br>
+                Транспортного энтузиаста
+            </p>
+        </div>
+        <nav class="top__right__navigation__bar">
+            <a class="nav__link" href="../gallery/gallery.html">Галерея</a>
+            <a class="nav__link" href="#">Блог</a>
+            <a class="nav__link" href="../about/about.html">О сайте</a>
+            <div>
+                <a class="nav__link enter__link" href="#">Войти</a>
+                <img class="enter__link__image" src="../icon_unlogged.png">
+            </div>
+            
+        </nav>
+    </header>
+    <main>
+        <div class="gallery__header__container">
+            <h1 class="gallery__header">ГАЛЕРЕЯ</h1>
+        </div>
+        <div class="add__image__div">
+            <p class="add__image__div__header">Добавить<br>изображение:</p>
+            <div class="add__photo__section">
+                <textarea class = "add__photo__section__url__input" placeholder="Ссылка на изображение"></textarea>
+                <ul class="photo__info">
+                    <li class="photo__info__line">
+                        <img class="photo__info__icon" src="icons/icon_user.png">
+                        <input class="add__photo__section__input add__photo__user__input"placeholder="Пользователь">
+                    </li>
+                    <li class="photo__info__line">
+                        <img class="photo__info__icon" src="icons/icon_info.png">
+                        <input class="add__photo__section__input add__photo__title__input" placeholder="Название">
+                    </li>
+                    <li class="photo__info__line">
+                        <img class="photo__info__icon" src="icons/icon_time.png">
+                        <input class="add__photo__section__input add__photo__date__input" type="date" placeholder="Дата">
+                    </li>
+                    <li class="photo__info__line">
+                        <img class="photo__info__icon" src="icons/icon_location.png">
+                        <input class="add__photo__section__input add__photo__location__input" placeholder="Место">
+                    </li>
+                    <li>
+                        <button class="add__photo__section__confirm__btn">Добавить</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border__line"></div>
+        <div class="content">
+            
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">© COPYRIGHT 2023</p>
+    </footer>
+    <script src="script_gallery.js"></script>
+</body>
+</html>

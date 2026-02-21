@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ru.cs.vsu.yachnyy_m_a.FormMain">
+  <grid id="27dc6" binding="PanelMain" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="573" height="408"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="8d2ce">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="600" height="200"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="796cb" class="javax.swing.JTextArea" binding="TextAreaInput">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <grid id="e8742" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="f7be6" class="javax.swing.JButton" binding="ButtonLoadInputFromFile">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Загрузить текст из файла"/>
+            </properties>
+          </component>
+          <component id="316de" class="javax.swing.JButton" binding="ButtonProcess">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Обработать"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="1a01f">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="600" height="200"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="fbf62" class="javax.swing.JTextArea" binding="TextAreaOutput">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="3799b" class="javax.swing.JButton" binding="ButtonSaveOutputIntoFile">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Сохранить вывод в файл"/>
+        </properties>
+      </component>
+      <component id="ea6a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Ввод:"/>
+        </properties>
+      </component>
+      <component id="7cbd5" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Вывод:"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль пользователя</title>
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <link rel="icon" href="icons/favicon.ico">
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<div class="overlay__create__new__payment">
+    <div class="overlay__content">
+        <h2 style="background: white">Создать новый счёт</h2>
+        <div style="display: flex; flex-direction: row; background: white;">
+            <div class="overlay__general__info" style="width:300px; display: flex; flex-direction: column; align-items: center;">
+                <h3>Общая информация</h3>
+                <label for="input-new-spending-name">Название счёта</label>
+                <input class="input__new__spending__name" id="input-new-spending-name">
+                <label for="input-new-spending-date">Дата</label>
+                <input type="date" class="input__new__spending__date" id="input-new-spending-date">
+            </div>
+            <div class="overlay__spending__participants" style="display: flex; flex-direction: column; align-items: center;">
+                <h3>Участники счёта</h3>
+                <h5>Нажмите на ник пользователя, чтобы сделать его заплатившим</h5>
+                <div class="div__other__spending__participants" style="height: 200px; width: 350px; overflow-y: scroll;">
+
+                </div>
+                <h4>Добавьте из друзей:</h4>
+                <div class="div__overlay__friends" style="height: 200px; width: 350px ;overflow-y: scroll;">
+
+                </div>
+                <h4>Или добавьте по нику:</h4>
+                <div style="display: flex; justify-content: stretch">
+                    <input class="input__add__outsider__to__spending__name" placeholder="Ник">
+                    <button class="button__add__outsider__to__spending">Добавить</button>
+                </div>
+                <p class="text__add__outsider__to__spending__status"></p>
+            </div>
+            <div class="overlay__overall__amount" style="width:300px; display: flex; flex-direction: column; align-items: center;">
+                <h3>Способ разделения</h3>
+
+                <div style="display:flex; align-items: center;">
+                    <label for="radio-button-equal-parts">Равные доли</label>
+                    <input type="radio" value="equal" id="radio-button-equal-parts" name="radio-distribution-method" class="radio__btn__distribution__method">
+                </div>
+                <div style="display:flex; align-items: center;">
+                    <label for="radio-button-explicit-parts">Явные доли</label>
+                    <input type="radio" value="explicit" id="radio-button-explicit-parts" name="radio-distribution-method" class="radio__btn__distribution__method">
+                </div>
+                <div class="div__overall__amount" style="display: none;">
+                    <h3>Сумма счёта</h3>
+                    <p><input class="input__overall__amount" value="0"> ₽</p>
+                </div>
+
+            </div>
+        </div>
+        <p class="text__spending__creation__status"></p>
+        <div style="display: flex; flex-direction: row">
+            <button class="button__confirm__new__spending">СОЗДАТЬ</button>
+            <button class="button__close__create__new__payment__overlay">ОТМЕНА</button>
+        </div>
+    </div>
+</div>
+<h1>Выполнен вход в аккаунт <span class="span__username"></span> <a href="/logout">Выйти</a></h1>
+<a href="/friends" style="background: #EEEEEE; height: 30px; line-height: 30px; border-radius: 10px; display: inline; font-size: 20px; padding: 10px; margin: 5px">
+    Ваши друзья
+</a>
+<div class="content" style="display: flex; flex-direction: row; margin-top: 10px">
+
+    <div class="div__spendings" style="padding: 20px; margin: 5px; background: #DDDDDD; border-radius: 10px;">
+        <div style="display: flex; flex-direction: row; align-items: center">
+            <h2>Счета </h2>
+            <p class="text__spending__count"></p>
+        </div>
+        <button class="button__create__new__spending">Создать новый счёт</button>
+        <h3 style="margin: 5px;">Сортировать по:</h3>
+        <div style="display: flex">
+            <input class="input__radio__sort__criteria" type="radio" name="sort-criteria" value="date_descend" id="input-sort-criteria-date-descend">
+            <label for="input-sort-criteria-date-descend">Дате (старые)</label>
+
+            <input class="input__radio__sort__criteria" type="radio" name="sort-criteria" value="date_ascend" id="input-sort-criteria-date-ascend">
+            <label for="input-sort-criteria-date-ascend">Дате (новые)</label>
+        </div>
+        <div style="display: flex">
+            <input class="input__radio__sort__criteria" type="radio" name="sort-criteria" value="debt_descend" id="input-sort-criteria-debt-descend">
+            <label for="input-sort-criteria-debt-descend">Долгу (больше)</label>
+
+            <input class="input__radio__sort__criteria" type="radio" name="sort-criteria" value="debt_ascend" id="input-sort-criteria-debt-ascend">
+            <label for="input-sort-criteria-debt-ascend">Долгу (меньше)</label>
+        </div>
+        <div style="display: flex">
+            <input type="checkbox" id="input-check-hide-zero-debt-spendings">
+            <label for="input-check-hide-zero-debt-spendings">Скрыть счета с нулевым долгом</label>
+        </div>
+        <span class="span__spendings__loading__message" style="color: gray">Загружаем счета...</span>
+        <div class="div__all__spendings">
+
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center">
+            <button class="button__spendings__previous__page" style="padding: 5px; margin: 5px">
+                <
+            </button>
+            <p class="text__spendings__current__page">0 из 0</p>
+            <button class="button__spendings__next__page" style="padding: 5px; margin: 5px">
+                >
+            </button>
+        </div>
+    </div>
+
+    <div class="div__debts" style="padding: 20px; margin: 5px; background: #DDDDDD; border-radius: 10px;">
+        <div style="display: flex; flex-direction: row; align-items: center">
+            <h2>Долги</h2>
+            <p class="text__debt__count"></p>
+        </div>
+        <p>Всего долгов на <span class="span__total__debt__amount">0</span> ₽</p>
+        <div class="div__all__debts">
+            <p style="color:gray">Подождите, идёт загрузка...</p>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="js/profile/profile_spendings.js"></script>
+<script type="text/javascript" src="js/profile/profile_new_spending.js"></script>
+
+</body>
+</html>

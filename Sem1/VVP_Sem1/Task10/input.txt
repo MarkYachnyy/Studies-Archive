@@ -1,0 +1,22 @@
+[
+	{"name":"Man1 M.A.",
+	 "sex":"MALE",
+	 "course":1,
+	 "mark":45.6},
+
+	{"name":"Man2 M.A.",
+	 "sex":"MALE",
+	 "course":1,
+	 "mark":45.6},
+
+	{"name":"Woman1 M.A.",
+	 "sex":"FEMALE",
+	 "course":1,
+	 "mark":45.6},
+
+	{"name":"Woman2 M.A.",
+	 "sex":"FEMALE",
+	 "course":1,
+	 "mark":45.6}
+
+]

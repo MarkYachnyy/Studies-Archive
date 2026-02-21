@@ -1,0 +1,12 @@
+--упр.1
+--SELECT * FROM student WHERE stipend = (SELECT MAX(stipend) FROM student) ORDER BY surname;
+--упр.2
+--SELECT * FROM student WHERE stipend > (SELECT AVG(stipend) FROM student);
+--упр.3
+--SELECT * FROM student WHERE (SELECT city FROM university WHERE univ_id = student.univ_id) = 'Воронеж' ORDER BY univ_id, kurs;
+--упр.4
+--SELECT * FROM subject WHERE hour = (SELECT MAX(hour) FROM subject);
+--упр.5
+--SELECT name, surname FROM student WHERE city != (SELECT city FROM university WHERE univ_id = student.univ_id);
+--упр.6
+--SELECT * FROM university WHERE city = 'Москва' AND rating < (SELECT rating FROM university WHERE univ_name = 'Воронежский государственный университет');

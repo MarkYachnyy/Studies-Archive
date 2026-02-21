@@ -1,0 +1,922 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/marky/ontologies/2025/9/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/marky/ontologies/2025/9/untitled-ontology-8">
+    <Prefix name="" IRI="http://www.semanticweb.org/marky/ontologies/2025/9/untitled-ontology-8/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Атом"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Излучение"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#МакроскопическоеТело"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#МеханическоеДвижение"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#РазделФизики"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#СистемаОтсчёта"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Учёный"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ФизическийЗакон"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ФизическоеТело"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ФизическоеЯвление"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Частица"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#входитВРаздел"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#входитВТело"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#выведенУчёным"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#выделенУчёным"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#движетсяОтносительно"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#имеетАнтичастицу"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#описываетсяЗаконом"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#происходитВ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#происходитС"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#экспертВРазделе"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#агрегатноеСостояние"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#амплитуда"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#годОснования"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#годОткрытия"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#годРождения"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#длительность"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#заряд"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#изотоп"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#инерциальность"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#масса"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#номерВПериодическойТаблице"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#объём"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#полноеИмя"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#скорость"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#тип"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ускорение"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#формулировка"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#частота"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Антипротон"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#АтомВодорода"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#АтомЛития"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ВторойЗаконНьютона"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ДвижениеЧеловекаПоПоезду"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ДвижениеЭлектрона"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ДвижущийсяПоезд"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Декарт"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ЗаконСохраненияИмпульса"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Земля"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ИзлучениеСмартфона"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ИзлучениеЭлектрона"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Максвелл"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Механика"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ньютон"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Позитрон"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Протон"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Смартфон"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#УравненияМаксвелла"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Человек"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Электродинамика"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Электрон"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Атом"/>
+        <Class IRI="#ФизическоеТело"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Излучение"/>
+        <Class IRI="#ФизическоеЯвление"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#МакроскопическоеТело"/>
+        <Class IRI="#ФизическоеТело"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#МеханическоеДвижение"/>
+        <Class IRI="#ФизическоеЯвление"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Частица"/>
+        <Class IRI="#ФизическоеТело"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Частица"/>
+        <NamedIndividual IRI="#Антипротон"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Атом"/>
+        <NamedIndividual IRI="#АтомВодорода"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Атом"/>
+        <NamedIndividual IRI="#АтомЛития"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ФизическийЗакон"/>
+        <NamedIndividual IRI="#ВторойЗаконНьютона"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#МеханическоеДвижение"/>
+        <NamedIndividual IRI="#ДвижениеЧеловекаПоПоезду"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#МеханическоеДвижение"/>
+        <NamedIndividual IRI="#ДвижениеЭлектрона"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#СистемаОтсчёта"/>
+        <NamedIndividual IRI="#ДвижущийсяПоезд"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Учёный"/>
+        <NamedIndividual IRI="#Декарт"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ФизическийЗакон"/>
+        <NamedIndividual IRI="#ЗаконСохраненияИмпульса"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#СистемаОтсчёта"/>
+        <NamedIndividual IRI="#Земля"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Излучение"/>
+        <NamedIndividual IRI="#ИзлучениеСмартфона"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Излучение"/>
+        <NamedIndividual IRI="#ИзлучениеЭлектрона"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Учёный"/>
+        <NamedIndividual IRI="#Максвелл"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#РазделФизики"/>
+        <NamedIndividual IRI="#Механика"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Учёный"/>
+        <NamedIndividual IRI="#Ньютон"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Частица"/>
+        <NamedIndividual IRI="#Позитрон"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Частица"/>
+        <NamedIndividual IRI="#Протон"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#МакроскопическоеТело"/>
+        <NamedIndividual IRI="#Смартфон"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ФизическийЗакон"/>
+        <NamedIndividual IRI="#УравненияМаксвелла"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#МакроскопическоеТело"/>
+        <NamedIndividual IRI="#Человек"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#РазделФизики"/>
+        <NamedIndividual IRI="#Электродинамика"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Частица"/>
+        <NamedIndividual IRI="#Электрон"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетАнтичастицу"/>
+        <NamedIndividual IRI="#Антипротон"/>
+        <NamedIndividual IRI="#Протон"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#входитВТело"/>
+        <NamedIndividual IRI="#АтомВодорода"/>
+        <NamedIndividual IRI="#Человек"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#входитВТело"/>
+        <NamedIndividual IRI="#АтомЛития"/>
+        <NamedIndividual IRI="#Смартфон"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#входитВРаздел"/>
+        <NamedIndividual IRI="#ВторойЗаконНьютона"/>
+        <NamedIndividual IRI="#Механика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выведенУчёным"/>
+        <NamedIndividual IRI="#ВторойЗаконНьютона"/>
+        <NamedIndividual IRI="#Ньютон"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#описываетсяЗаконом"/>
+        <NamedIndividual IRI="#ДвижениеЧеловекаПоПоезду"/>
+        <NamedIndividual IRI="#ВторойЗаконНьютона"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#происходитВ"/>
+        <NamedIndividual IRI="#ДвижениеЧеловекаПоПоезду"/>
+        <NamedIndividual IRI="#ДвижущийсяПоезд"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#происходитС"/>
+        <NamedIndividual IRI="#ДвижениеЧеловекаПоПоезду"/>
+        <NamedIndividual IRI="#Человек"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#описываетсяЗаконом"/>
+        <NamedIndividual IRI="#ДвижениеЭлектрона"/>
+        <NamedIndividual IRI="#ВторойЗаконНьютона"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#происходитВ"/>
+        <NamedIndividual IRI="#ДвижениеЭлектрона"/>
+        <NamedIndividual IRI="#Земля"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#происходитС"/>
+        <NamedIndividual IRI="#ДвижениеЭлектрона"/>
+        <NamedIndividual IRI="#Электрон"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#движетсяОтносительно"/>
+        <NamedIndividual IRI="#ДвижущийсяПоезд"/>
+        <NamedIndividual IRI="#Земля"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#экспертВРазделе"/>
+        <NamedIndividual IRI="#Декарт"/>
+        <NamedIndividual IRI="#Механика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#входитВРаздел"/>
+        <NamedIndividual IRI="#ЗаконСохраненияИмпульса"/>
+        <NamedIndividual IRI="#Механика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выведенУчёным"/>
+        <NamedIndividual IRI="#ЗаконСохраненияИмпульса"/>
+        <NamedIndividual IRI="#Декарт"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#описываетсяЗаконом"/>
+        <NamedIndividual IRI="#ИзлучениеСмартфона"/>
+        <NamedIndividual IRI="#УравненияМаксвелла"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#происходитС"/>
+        <NamedIndividual IRI="#ИзлучениеСмартфона"/>
+        <NamedIndividual IRI="#Смартфон"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#описываетсяЗаконом"/>
+        <NamedIndividual IRI="#ИзлучениеЭлектрона"/>
+        <NamedIndividual IRI="#УравненияМаксвелла"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#происходитС"/>
+        <NamedIndividual IRI="#ИзлучениеЭлектрона"/>
+        <NamedIndividual IRI="#Электрон"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#экспертВРазделе"/>
+        <NamedIndividual IRI="#Максвелл"/>
+        <NamedIndividual IRI="#Электродинамика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выделенУчёным"/>
+        <NamedIndividual IRI="#Механика"/>
+        <NamedIndividual IRI="#Ньютон"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#экспертВРазделе"/>
+        <NamedIndividual IRI="#Ньютон"/>
+        <NamedIndividual IRI="#Механика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетАнтичастицу"/>
+        <NamedIndividual IRI="#Позитрон"/>
+        <NamedIndividual IRI="#Электрон"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетАнтичастицу"/>
+        <NamedIndividual IRI="#Протон"/>
+        <NamedIndividual IRI="#Антипротон"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#входитВРаздел"/>
+        <NamedIndividual IRI="#УравненияМаксвелла"/>
+        <NamedIndividual IRI="#Электродинамика"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выведенУчёным"/>
+        <NamedIndividual IRI="#УравненияМаксвелла"/>
+        <NamedIndividual IRI="#Максвелл"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#выделенУчёным"/>
+        <NamedIndividual IRI="#Электродинамика"/>
+        <NamedIndividual IRI="#Максвелл"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#имеетАнтичастицу"/>
+        <NamedIndividual IRI="#Электрон"/>
+        <NamedIndividual IRI="#Позитрон"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#заряд"/>
+        <NamedIndividual IRI="#Антипротон"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-1.6E-19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#масса"/>
+        <NamedIndividual IRI="#Антипротон"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.67E-27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#тип"/>
+        <NamedIndividual IRI="#Антипротон"/>
+        <Literal>составная</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#изотоп"/>
+        <NamedIndividual IRI="#АтомВодорода"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#номерВПериодическойТаблице"/>
+        <NamedIndividual IRI="#АтомВодорода"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#изотоп"/>
+        <NamedIndividual IRI="#АтомЛития"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#номерВПериодическойТаблице"/>
+        <NamedIndividual IRI="#АтомЛития"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#годОткрытия"/>
+        <NamedIndividual IRI="#ВторойЗаконНьютона"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1687</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#формулировка"/>
+        <NamedIndividual IRI="#ВторойЗаконНьютона"/>
+        <Literal>Ускорение тела прямо пропорционально равнодействующей всех сил, действующих на него, и обратно пропорционально массе тела.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#скорость"/>
+        <NamedIndividual IRI="#ДвижениеЧеловекаПоПоезду"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ускорение"/>
+        <NamedIndividual IRI="#ДвижениеЧеловекаПоПоезду"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#скорость"/>
+        <NamedIndividual IRI="#ДвижениеЭлектрона"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0E8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ускорение"/>
+        <NamedIndividual IRI="#ДвижениеЭлектрона"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0E8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#инерциальность"/>
+        <NamedIndividual IRI="#ДвижущийсяПоезд"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#скорость"/>
+        <NamedIndividual IRI="#ДвижущийсяПоезд"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#годРождения"/>
+        <NamedIndividual IRI="#Декарт"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1596</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#полноеИмя"/>
+        <NamedIndividual IRI="#Декарт"/>
+        <Literal>Рене Декарт</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#годОткрытия"/>
+        <NamedIndividual IRI="#ЗаконСохраненияИмпульса"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1650</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#формулировка"/>
+        <NamedIndividual IRI="#ЗаконСохраненияИмпульса"/>
+        <Literal>Сумма импульсов всех тел в замкнутой системе остаётся постоянной, если на эту систему не действуют внешние силы.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#инерциальность"/>
+        <NamedIndividual IRI="#Земля"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#скорость"/>
+        <NamedIndividual IRI="#Земля"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#амплитуда"/>
+        <NamedIndividual IRI="#ИзлучениеСмартфона"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#длительность"/>
+        <NamedIndividual IRI="#ИзлучениеСмартфона"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#частота"/>
+        <NamedIndividual IRI="#ИзлучениеСмартфона"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0E9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#амплитуда"/>
+        <NamedIndividual IRI="#ИзлучениеЭлектрона"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#длительность"/>
+        <NamedIndividual IRI="#ИзлучениеЭлектрона"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#частота"/>
+        <NamedIndividual IRI="#ИзлучениеЭлектрона"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.00000008E16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#годРождения"/>
+        <NamedIndividual IRI="#Максвелл"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1831</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#полноеИмя"/>
+        <NamedIndividual IRI="#Максвелл"/>
+        <Literal>Джеймс Клерк Максвелл</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#годОснования"/>
+        <NamedIndividual IRI="#Механика"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1687</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#годРождения"/>
+        <NamedIndividual IRI="#Ньютон"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1643</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#полноеИмя"/>
+        <NamedIndividual IRI="#Ньютон"/>
+        <Literal>Сэр Исаак Ньютон</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#заряд"/>
+        <NamedIndividual IRI="#Позитрон"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.6E-19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#масса"/>
+        <NamedIndividual IRI="#Позитрон"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">9.1E-31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#тип"/>
+        <NamedIndividual IRI="#Позитрон"/>
+        <Literal>элементарная</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#заряд"/>
+        <NamedIndividual IRI="#Протон"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.6E-19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#масса"/>
+        <NamedIndividual IRI="#Протон"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.67E-27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#тип"/>
+        <NamedIndividual IRI="#Протон"/>
+        <Literal>составная</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#масса"/>
+        <NamedIndividual IRI="#Смартфон"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#объём"/>
+        <NamedIndividual IRI="#Смартфон"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.00012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#годОткрытия"/>
+        <NamedIndividual IRI="#УравненияМаксвелла"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1873</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#формулировка"/>
+        <NamedIndividual IRI="#УравненияМаксвелла"/>
+        <Literal>Электрические заряды создают электрическое поле, изменяющееся магнитное поле порождает вихревое электрическое поле, а магнитное поле создается как токами проводимости, так и переменным электрическим полем (через ток смещения).</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#масса"/>
+        <NamedIndividual IRI="#Человек"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.08</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#масса"/>
+        <NamedIndividual IRI="#Человек"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#годОснования"/>
+        <NamedIndividual IRI="#Электродинамика"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1864</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#заряд"/>
+        <NamedIndividual IRI="#Электрон"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">-1.6E-19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#масса"/>
+        <NamedIndividual IRI="#Электрон"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">9.1E-31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#тип"/>
+        <NamedIndividual IRI="#Электрон"/>
+        <Literal>элементарная</Literal>
+    </DataPropertyAssertion>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#имеетАнтичастицу"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#входитВРаздел"/>
+        <Class IRI="#ФизическийЗакон"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#входитВТело"/>
+        <Class IRI="#Атом"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#выведенУчёным"/>
+        <Class IRI="#ФизическийЗакон"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#выделенУчёным"/>
+        <Class IRI="#РазделФизики"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#движетсяОтносительно"/>
+        <Class IRI="#СистемаОтсчёта"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#имеетАнтичастицу"/>
+        <Class IRI="#Частица"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#описываетсяЗаконом"/>
+        <Class IRI="#ФизическоеЯвление"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#происходитВ"/>
+        <Class IRI="#ФизическоеЯвление"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#происходитС"/>
+        <Class IRI="#ФизическоеЯвление"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#экспертВРазделе"/>
+        <Class IRI="#Учёный"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#входитВРаздел"/>
+        <Class IRI="#РазделФизики"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#входитВТело"/>
+        <Class IRI="#МакроскопическоеТело"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#выведенУчёным"/>
+        <Class IRI="#Учёный"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#выделенУчёным"/>
+        <Class IRI="#Учёный"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#движетсяОтносительно"/>
+        <Class IRI="#СистемаОтсчёта"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#имеетАнтичастицу"/>
+        <Class IRI="#Частица"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#описываетсяЗаконом"/>
+        <Class IRI="#ФизическийЗакон"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#происходитВ"/>
+        <Class IRI="#СистемаОтсчёта"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#происходитС"/>
+        <Class IRI="#ФизическоеТело"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#экспертВРазделе"/>
+        <Class IRI="#РазделФизики"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#агрегатноеСостояние"/>
+        <Class IRI="#МакроскопическоеТело"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#амплитуда"/>
+        <Class IRI="#Излучение"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#годОснования"/>
+        <Class IRI="#РазделФизики"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#годОткрытия"/>
+        <Class IRI="#ФизическийЗакон"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#годРождения"/>
+        <Class IRI="#Учёный"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#длительность"/>
+        <Class IRI="#ФизическоеЯвление"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#заряд"/>
+        <Class IRI="#Частица"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#изотоп"/>
+        <Class IRI="#Атом"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#инерциальность"/>
+        <Class IRI="#СистемаОтсчёта"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#масса"/>
+        <Class IRI="#ФизическоеТело"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#номерВПериодическойТаблице"/>
+        <Class IRI="#Атом"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#объём"/>
+        <Class IRI="#МакроскопическоеТело"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#полноеИмя"/>
+        <Class IRI="#Учёный"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#скорость"/>
+        <Class IRI="#МеханическоеДвижение"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#скорость"/>
+        <Class IRI="#СистемаОтсчёта"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#тип"/>
+        <Class IRI="#Частица"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ускорение"/>
+        <Class IRI="#МеханическоеДвижение"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#формулировка"/>
+        <Class IRI="#ФизическийЗакон"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#частота"/>
+        <Class IRI="#Излучение"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#агрегатноеСостояние"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#амплитуда"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#годОснования"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#годОткрытия"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#годРождения"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#длительность"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#заряд"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#изотоп"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#инерциальность"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#масса"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#номерВПериодическойТаблице"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#объём"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#полноеИмя"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#скорость"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#тип"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ускорение"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#формулировка"/>
+        <Datatype abbreviatedIRI="rdf:langString"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#частота"/>
+        <Datatype abbreviatedIRI="owl:real"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

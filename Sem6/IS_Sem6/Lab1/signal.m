@@ -1,0 +1,12 @@
+clc;
+clear;
+x = [-0.5, -0.5, -0.5, -1.5 -1.5, -1.5, -2.5, -3.5];
+y = [-1, 1, 0, -1, 1, 0, 0, 0];
+inphase = [x, -x];
+inphase = inphase(:);
+quadr = [y, y];
+quadr = quadr(:);
+const = inphase + 1i*quadr;
+scatterplot(const,1,0,'*');
+temp = length(const);
+grid on;

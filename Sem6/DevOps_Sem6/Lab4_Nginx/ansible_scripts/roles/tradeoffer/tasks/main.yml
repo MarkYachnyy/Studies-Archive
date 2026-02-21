@@ -1,0 +1,30 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for roles/tradeoffer
+
+- name: Clone repo from git
+  ansible.builtin.git:
+    repo: https://github.com/DeviJoe/task1-Docker-Ansible-Vagrant
+    dest: /srv/tradeoffer
+
+- name: Clone frontend dockerfile
+  ansible.builtin.copy:
+    src: ~/ansible_scripts/dockerfiles/frontend/Dockerfile
+    dest: /srv/tradeoffer/frontend
+
+- name: Clone back dockerfile
+  ansible.builtin.copy:
+    src: ~/ansible_scripts/dockerfiles/backend/Dockerfile
+    dest: /srv/tradeoffer/backend
+
+- name: Clone compose file
+  ansible.builtin.copy:
+    src: ~/ansible_scripts/dockerfiles/compose.yml
+    dest: /srv/tradeoffer
+
+- name: Launch docker-compose
+  community.docker.docker_compose_v2:
+    project_src: /srv/tradeoffer/
+    state: present
+    build: always
+    recreate: always

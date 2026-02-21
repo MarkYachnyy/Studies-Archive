@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusHub</title>
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="enter__overlay">
+        <div class="enter__overlay__content enter__overlay__unlogged">
+            <h1 class="enter__overlay__header">Войти на сайт</h1>
+            <input class="enter__login__input" placeholder="Логин">
+            <input class="enter__password__input" placeholder="Пароль" type="password">
+            <div class="enter__overlay__buttons">
+                <button class="enter__overlay__btn__cancel">Отмена</button>
+                <button class="enter__overlay__btn__enter">Войти</button>
+            </div>
+        </div>
+        <div class="enter__overlay__content enter__overlay__logged">
+            <h1 class="enter__overlay__header">Выполнен вход на сайт под логином <span class="enter__overlay__username__span"></span></h1>
+            <div class="enter__overlay__buttons">
+                <button class="enter__overlay__ok__button">OK</button>
+                <button class="enter__overlay__unlog__button">Выйти</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="../main/index.html" class="logo__upper">
+                Bus<span class="logo__upper__span">Hub</span>
+            </a>
+            <p class="logo__lower">
+                Место для каждого<br>
+                Транспортного энтузиаста
+            </p>
+        </div>
+        <nav class="top__right__navigation__bar">
+            <a class="nav__link" href="../gallery/gallery.html">Галерея</a>
+            <a class="nav__link" href="#">Блог</a>
+            <a class="nav__link" href="../about/about.html">О сайте</a>
+            <div>
+                <a class="nav__link enter__link" href="#">Войти</a>
+                <img class="enter__link__image" src="../icon_unlogged.png">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="blog">
+            <h1 class="blog__header">Фото</h1>
+            <div class="blog__content">
+                <div class="blog__article">
+                    <h1 class="article__header">Трамваи</h1>
+                    <img class="article__image" src="https://transphoto.org/photo/17/28/66/1728666.jpg">
+                    <p class="article__text">Для любителей прокатиться на данном быстром и тихом виде транспорта в галерее есть богатое разнообразие снимков.</p>
+                    <a class="article__link"href="#">смотреть</a>
+                </div>
+                <div class="blog__article">
+                    <h1 class="article__header">Автобусы</h1>
+                    <img class="article__image" src="https://fotobus.msk.ru/photo/30/17/40/3017408.jpg">
+                    <p class="article__text">От отечественных машин до китайских производителей: множество фотографий самого распространённого вида общественного транспорта!</p>
+                    <a class="article__link"href="#">смотреть</a>
+                </div>
+                <div class="blog__article">
+                    <h1 class="article__header">Поезда</h1>
+                    <img class="article__image" src="https://www.karavantver.ru/wp-content/uploads/2022/03/lastochka.jpg">
+                    <p class="article__text">Любители путешествовать под стук колёс тоже приветствуются! Метро, электрички, дальние поезда - всё это можно здесь найти.</p>
+                    <a class="article__link"href="#">смотреть</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="bottom__navigation_bar">
+            <h1 class="footer__header">Подпишитесь на рассылку!</h1>
+            <input type="email" class="email__input" placeholder="введите свой e-mail">
+            <button type = "submit" class="subscription__submit">подтвердить</button>
+        </div>
+        <p class="copyright">© COPYRIGHT 2023</p>
+    </footer>
+    <script src="script_index.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+{
+  "integerRules": [
+    {
+      "columnName": "age",
+      "tableName": "users",
+      "nullChance": 0.1,
+      "distributionType": "UNIFORM",
+      "params": [
+        18,
+        45
+      ]
+    },
+    {
+      "columnName": "price",
+      "tableName": "products",
+      "nullChance": 0,
+      "distributionType": "UNIFORM",
+      "params": [
+        200,
+        1000
+      ]
+    },
+    {
+      "columnName": "quantity",
+      "tableName": "orderitems",
+      "nullChance": 0,
+      "distributionType": "UNIFORM",
+      "params": [
+        1,
+        4
+      ]
+    }
+  ],
+  "stringRules": [
+    {
+      "columnName": "name",
+      "tableName": "users",
+      "nullChance": 0.01,
+      "separator": " ",
+      "wordRules": [
+        {
+          "allowedCharacters": [
+            "абвгдежзиклмнопрстуфхцчшщъыьэюя"
+          ],
+          "distributionType": "UNIFORM",
+          "distributionParams": [
+            5,
+            10
+          ]
+        },
+        {
+          "allowedCharacters": [
+            "абвгдежзиклмнопрстуфхцчшщъыьэюя"
+          ],
+          "distributionType": "UNIFORM",
+          "distributionParams": [
+            5,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "columnName": "email",
+      "tableName": "users",
+      "nullChance": 0,
+      "separator": "",
+      "wordRules": [
+        {
+          "allowedCharacters": [
+            "abcdefghijklmnopqrstuvwxyz"
+          ],
+          "distributionType": "UNIFORM",
+          "distributionParams": [
+            5,
+            10
+          ]
+        },
+        {
+          "allowedCharacters": [
+            "@"
+          ],
+          "distributionType": "UNIFORM",
+          "distributionParams": [
+            1,
+            2
+          ]
+        },
+        {
+          "allowedCharacters": [
+            "abcdefghijklmnopqrstuvwxyz"
+          ],
+          "distributionType": "UNIFORM",
+          "distributionParams": [
+            4,
+            7
+          ]
+        },
+        {
+          "allowedCharacters": [
+            ".",
+            "c",
+            "o",
+            "m"
+          ]
+        }
+      ]
+    },
+    {
+      "columnName": "number",
+      "tableName": "cards",
+      "nullChance": 0,
+      "separator": " ",
+      "wordRules": [
+        {
+          "allowedCharacters": [
+            "0123456789"
+          ],
+          "distributionType": "UNIFORM",
+          "distributionParams": [
+            8,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "columnName": "name",
+      "tableName": "products",
+      "nullChance": 0,
+      "separator": " ",
+      "wordRules": [
+        {
+          "allowedCharacters": [
+            "абвгдежзиклмнопрстуфхцчшщъыьэюя"
+          ],
+          "distributionType": "UNIFORM",
+          "distributionParams": [
+            8,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "columnName": "name",
+      "tableName": "sellers",
+      "nullChance": 0,
+      "separator": " ",
+      "wordRules": [
+        {
+          "allowedCharacters": [
+            "абвгдежзиклмнопрстуфхцчшщъыьэюя"
+          ],
+          "distributionType": "UNIFORM",
+          "distributionParams": [
+            8,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "columnName": "website",
+      "tableName": "sellers",
+      "nullChance": 0,
+      "separator": " ",
+      "wordRules": [
+        {
+          "allowedCharacters": [
+            "adcdef"
+          ],
+          "distributionType": "UNIFORM",
+          "distributionParams": [
+            10,
+            20
+          ]
+        }
+      ]
+    }
+  ],
+  "dateRules": [
+    {
+      "columnName": "date",
+      "tableName": "orders",
+      "startDate": "2022-01-01",
+      "endDate": "2024-12-31"
+    }
+  ],
+  "floatRules": [
+    {
+      "columnName": "rating",
+      "tableName": "products",
+      "nullChance": 0.02,
+      "distributionType": "UNIFORM",
+      "params": [
+        4,
+        0.3
+      ]
+    },
+    {
+      "columnName": "rating",
+      "tableName": "sellers",
+      "nullChance": 0.25,
+      "distributionType": "UNIFORM",
+      "params": [
+        4,
+        0.3
+      ]
+    }
+  ],
+  "dateIntervalRules": [
+    {
+      "columnName": "valid_period",
+      "tableName": "cards",
+      "nullChance": 0,
+      "relations": [
+        {
+          "start": "2018-01-01",
+          "end": "2020-12-31",
+          "relation": "OI"
+        },
+        {
+          "start": "2026-01-01",
+          "end": "2028-12-31",
+          "relation": "O"
+        }
+      ]
+    }
+  ],
+  "floatIntervalRules": [
+    {
+      "columnName": "discount_range",
+      "tableName": "products",
+      "nullChance": 0.1,
+      "relations": [
+        {
+          "start": 0,
+          "end": 0.05,
+          "relation": "MI"
+        },
+        {
+          "start": 0,
+          "end": 0.5,
+          "relation": "D"
+        }
+      ]
+    }
+  ]
+}

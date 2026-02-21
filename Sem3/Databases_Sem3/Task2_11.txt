@@ -1,0 +1,23 @@
+--упр.2 (Напишите запрос с EXISTS и соединением, позволяющий вывести данные обо всех студентах обучающихся в вузах, имеющих рейтинг выше 300)
+SELECT DISTINCT st.student_id, st.name, st.surname FROM student st, university un WHERE st.univ_id = un.univ_id AND un.rating > 300;
+--упр.4 (Напишите запрос, выбирающий из таблицы SUBJECT данные о названиях предметов обучения, экзамены по которым сданы более чем одним студентом)
+SELECT DISTINCT subj_name FROM subject su WHERE EXISTS 
+(SELECT ex.subj_id FROM exam_marks ex WHERE ex.mark > 2 GROUP BY ex.subj_id HAVING ex.subj_id = su.subj_id AND COUNT(DISTINCT ex.student_id) > 1);
+--упр.6
+SELECT DISTINCT st.city FROM student st WHERE NOT EXISTS(SELECT * FROM university un WHERE st.city = un.city) AND st.city IS NOT NULL;
+--упр.8
+SELECT * FROM subject su1 WHERE NOT EXISTS (SELECT * FROM subject su2 WHERE su1.subj_id = su2.subj_id AND su2.semester != su1.semester);
+--упр.10
+SELECT * FROM university un WHERE NOT EXISTS (SELECT * FROM lecturer le WHERE le.univ_id = un.univ_id);
+--упр.12
+SELECT * FROM subject su WHERE NOT EXISTS (SELECT * FROM exam_marks ex WHERE ex.subj_id = su.subj_id AND ex.mark = 2); 
+--упр.14
+SELECT * FROM student st WHERE NOT EXISTS (SELECT * FROM exam_marks ex WHERE ex.student_id = st.student_id AND ex.mark = 2);
+--упр.16
+SELECT st.name, st.surname FROM student st WHERE EXISTS (SELECT * FROM exam_marks ex WHERE ex.student_id = st.student_id AND ex.mark = 5);
+--упр.18
+SELECT COUNT(*) FROM student st WHERE NOT EXISTS(SELECT * FROM exam_marks ex WHERE ex.student_id = st.student_id);
+--упр.20
+SELECT COUNT(*) FROM student st WHERE EXISTS 
+(SELECT * FROM exam_marks ex WHERE ex.student_id = st.student_id AND ex.mark = 2) AND 
+st.city != (SELECT un.city FROM university un WHERE un.univ_id = st.univ_id);

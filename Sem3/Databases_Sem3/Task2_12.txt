@@ -1,0 +1,11 @@
+--упр.1 (Напишите запрос для получения списка названий предметов, изучаемых в нескольких семестрах.)
+--SELECT DISTINCT su1.subj_name FROM subject su1 WHERE NOT su1.semester =ALL(SELECT su2.semester FROM subject su2 WHERE su2.subj_name = su1.subj_name);
+--упр.2 (Напишите запрос, выполняющий выбор имен и фамилий студентов, имеющий весь набор положительных оценок (3, 4, 5))
+SELECT st.name, st.surname FROM student st WHERE
+3 IN (SELECT ex.mark FROM exam_MARKS ex WHERE ex.student_id = st.student_id) AND
+4 IN (SELECT ex.mark FROM exam_MARKS ex WHERE ex.student_id = st.student_id) AND
+5 IN (SELECT ex.mark FROM exam_MARKS ex WHERE ex.student_id = st.student_id);
+--упр.3
+/*SELECT DISTINCT st1.student_id FROM student st1 WHERE NOT EXISTS 
+(SELECT DISTINCT ex1.mark FROM exam_marks ex1 WHERE ex1.student_id = st1.student_id AND ex1.mark NOT IN
+(SELECT DISTINCT ex2.mark FROM exam_marks ex2 WHERE ex2.student_id = 12

@@ -1,0 +1,7 @@
+---
+- name: Creating root CA
+  hosts: all
+  become: true
+
+  roles:
+    - root_ca

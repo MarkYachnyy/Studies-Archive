@@ -1,0 +1,72 @@
+--упр.1
+--SELECT COUNT(*) FROM exam_marks WHERE subj_id = 20;
+--упр.2
+--SELECT COUNT (DISTINCT subj_id) FROM exam_marks;
+--упр.3
+--SELECT student_id, MIN(mark) FROM exam_marks GROUP BY student_id;
+--упр.4
+--SELECT student_id, MAX(mark) FROM exam_marks GROUP BY student_id;
+--упр.5
+--SELECT MIN(surname) FROM student WHERE surname LIKE 'И%';
+--упр.6
+--SELECT subj_name, MAX(semester) FROM subject GROUP BY subj_name;
+--упр.7
+--SELECT exam_date, COUNT(DISTINCT student_id) FROM exam_marks GROUP BY exam_date;
+--упр.8
+--SELECT student_id, ROUND(AVG(mark),2) FROM exam_marks GROUP BY student_id;
+--упр.9
+--SELECT subj_id, ROUND(AVG(mark),2) FROM exam_marks GROUP BY subj_id;
+--упр.10
+--SELECT subj_id, COUNT(*) FROM exam_marks GROUP BY subj_id;
+--упр.11
+--SELECT CEIL(semester/2.0), COUNT(*) FROM subject GROUP BY CEIL(semester/2.0); 
+--упр.12
+--SELECT univ_id, SUM(stipend) FROM student GROUP BY univ_id ORDER BY SUM(stipend);
+--упр.13
+--SELECT semester, SUM(hour) FROM subject GROUP BY semester;
+--упр.14
+--SELECT student_id, ROUND(AVG(mark),2) FROM exam_marks GROUP BY student_id;
+--упр.15
+--SELECT student_id, subj_id, ROUND(AVG(mark),2) FROM exam_marks GROUP BY student_id, subj_id;
+--упр.16
+<<<<<<< HEAD
+--SELECT city, COUNT(*) FROM student GROUP BY city ORDER BY COUNT(*);
+--упр.17
+--SELECT univ_id, COUNT(*) FROM student GROUP BY univ_id ORDER BY COUNT(*);
+--упр.18
+--SELECT univ_id, COUNT(*) FROM lecturer GROUP BY univ_id ORDER BY COUNT(*);
+=======
+--SELECT city, COUNT(*) FROM student GROUP BY city ORDER BY 2 DESC;
+--упр.17
+--SELECT univ_id, COUNT(student_id) FROM student GROUP BY univ_id ORDER BY 2;
+--упр.18
+--SELECT univ_id, COUNT(lecturer_id) FROM lecturer GROUP BY univ_id ORDER BY 2;
+>>>>>>> 0db7300604a40b7d4609d81129e2823a91bae862
+--упр.19
+--SELECT univ_id, kurs, SUM(stipend) FROM student GROUP BY univ_id, kurs;
+--упр.20
+--SELECT city, MAX(rating) FROM university GROUP BY city ORDER BY MAX(rating);
+--упр.21
+--SELECT exam_date, ROUND(AVG(mark), 2) FROM exam_marks GROUP BY exam_date;
+--упр.22
+--SELECT exam_date, subj_id, MAX(mark) FROM exam_marks GROUP BY exam_date, subj_id;
+--упр.23
+--SELECT exam_date, COUNT(DISTINCT student_id) FROM exam_marks GROUP BY exam_date;
+--упр.24
+--SELECT exam_date, student_id, COUNT(*) FROM exam_marks GROUP BY exam_date, student_id;
+--упр.25
+<<<<<<< HEAD
+--SELECT lecturer_id, COUNT(*) FROM subj_lect GROUP BY lecturer_id;
+--упр.26
+--SELECT subj_id, COUNT(*) FROM subj_lect GROUP BY subj_id;
+--упр.27
+--SELECT COUNT(*) FROM (SELECT DISTINCT student_id FROM exam_marks GROUP BY(student_id) HAVING MIN(mark) = 5) AS otl;
+=======
+--SELECT lecturer_id, COUNT(subj_id) FROM subj_lect GROUP BY lecturer_id;
+--упр.26
+--SELECT subj_id, COUNT(lecturer_id) FROM subj_lect GROUP BY subj_id;
+--упр.27
+--!!!!!SELECT COUNT(DISTINCT student_id) FROM exam_marks GROUP BY student_id HAVING MIN(mark) = 5;!!!!
+>>>>>>> 0db7300604a40b7d4609d81129e2823a91bae862
+--упр.28
+--SELECT COUNT(*) FROM exam_marks WHERE student_id = 32 AND mark > 2;

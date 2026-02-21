@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Друзья</title>
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <link rel="icon" href="icons/favicon.ico">
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<h1>Выполнен вход в аккаунт <span class="span__username"></span> <a href="/logout">Выйти</a></h1>
+<a href="/spendings" style="background: #EEEEEE; height: 30px; line-height: 30px; border-radius: 10px; display: inline; font-size: 20px; padding: 10px; margin: 5px">
+    Ваши счета
+</a>
+<div class="content" style="display: flex; flex-direction: row; margin-top: 10px">
+
+    <div style="background: #DDDDDD; border-radius: 10px; margin: 5px; padding: 10px;">
+        <div style="display: flex; flex-direction: row; align-items: center">
+            <h2>В друзьях</h2>
+            <p class="text__friends__count"></p>
+        </div>
+        <div class="div__in__friends">
+            <p style="color:gray">Подождите, идёт загрузка...</p>
+        </div>
+        <div style="display: flex; flex-direction: row; align-items: center">
+            <button class="button__friends__previous__page" style="padding: 5px; margin: 5px">
+                <
+            </button>
+            <p class="text__friends__current__page">0 из 0</p>
+            <button class="button__friends__next__page" style="padding: 5px; margin: 5px">
+                >
+            </button>
+        </div>
+    </div>
+
+    <div style="background: #DDDDDD; border-radius: 10px; margin: 5px; padding: 10px;">
+        <div style="display: flex; flex-direction: row; align-items: center">
+            <h2>Входящие запросы</h2>
+            <p class="text__incoming__requests__count"></p>
+        </div>
+        <div class="div__incoming__requests">
+            <p style="color:gray">Подождите, идёт загрузка...</p>
+        </div>
+    </div>
+
+
+    <div style="display: flex; flex-direction: row; background: #EEEEEE; padding: 10px; margin: 5px; border-radius: 10px">
+        <div style="background: #DDDDDD; border-radius: 10px; margin: 5px; padding: 10px;">
+            <div style="display: flex; flex-direction: row; align-items: center">
+                <h2>Исходящие запросы</h2>
+                <p class="text__sent__requests__count"></p>
+            </div>
+            <div class="div__sent__requests">
+                <p style="color:gray">Подождите, идёт загрузка...</p>
+            </div>
+        </div>
+
+        <div class="div__send__new__request"
+             style="background: #DDDDDD; border-radius: 10px; margin: 5px; padding: 10px;">
+            <h2>Добавить нового пользователя</h2>
+            <label for="add-user-name-input">Введите ник пользователя:</label>
+            <input id="add-user-name-input" class="input__add__friend__name"/>
+            <button class="button__send__friend__request">Отправить запрос</button>
+            <p class="text__new__request__status"></p>
+        </div>
+    </div>
+
+
+</div>
+
+<script type="text/javascript" src="js/profile/profile_friends.js"></script>
+
+</body>
+</html>

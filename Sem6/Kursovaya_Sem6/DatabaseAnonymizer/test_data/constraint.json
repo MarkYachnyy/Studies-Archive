@@ -1,0 +1,109 @@
+{
+  "primaryKeys": [
+    {
+      "tableName": "users",
+      "columnName": "id"
+    },
+    {
+      "tableName": "products",
+      "columnName": "id"
+    },
+    {
+      "tableName": "orders",
+      "columnName": "id"
+    },
+    {
+      "tableName": "orderitems",
+      "columnName": "id"
+    },
+    {
+      "tableName": "sellers",
+      "columnName": "id"
+    },
+    {
+      "tableName": "cards",
+      "columnName": "id"
+    }
+  ],
+  "foreignKeys": [
+    {
+      "sourceTableName": "cards",
+      "sourceColumnName": "user_id",
+      "targetTableName": "users",
+      "targetColumnName": "id",
+      "sourceDistributionType": "UNIFORM",
+      "sourceDistributionParams": [
+        1,
+        2
+      ],
+      "sourceZeroChance": 0.05,
+      "targetZeroChance": 0
+    },
+    {
+      "sourceTableName": "orders",
+      "sourceColumnName": "user_id",
+      "targetTableName": "users",
+      "targetColumnName": "id",
+      "sourceDistributionType": "UNIFORM",
+      "sourceDistributionParams": [
+        1,
+        4
+      ],
+      "sourceZeroChance": 0.1,
+      "targetZeroChance": 0
+    },
+    {
+      "sourceTableName": "orderitems",
+      "sourceColumnName": "order_id",
+      "targetTableName": "orders",
+      "targetColumnName": "id",
+      "sourceDistributionType": "UNIFORM",
+      "sourceDistributionParams": [
+        2,
+        5
+      ],
+      "sourceZeroChance": 0,
+      "targetZeroChance": 0
+    },
+    {
+      "sourceTableName": "orderitems",
+      "sourceColumnName": "product_id",
+      "targetTableName": "products",
+      "targetColumnName": "id",
+      "sourceDistributionType": "UNIFORM",
+      "sourceDistributionParams": [
+        3,
+        10
+      ],
+      "sourceZeroChance": 0.05,
+      "targetZeroChance": 0
+    },
+    {
+      "sourceTableName": "products",
+      "sourceColumnName": "seller_id",
+      "targetTableName": "sellers",
+      "targetColumnName": "id",
+      "sourceDistributionType": "UNIFORM",
+      "sourceDistributionParams": [
+        3,
+        6
+      ],
+      "sourceZeroChance": 0.02,
+      "targetZeroChance": 0
+    }
+  ],
+  "uniques": [
+    {
+      "tableName": "users",
+      "columnName": "email"
+    },
+    {
+      "tableName": "sellers",
+      "columnName": "name"
+    },
+    {
+      "tableName": "cards",
+      "columnName": "number"
+    }
+  ]
+}

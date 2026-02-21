@@ -1,0 +1,38 @@
+--упр.1
+--SELECT * FROM subject;
+--упр.2 
+--SELECT * FROM exam_marks where subj_id = 12;
+--упр.3
+--SELECT kurs, surname, name, stipend FROM student;
+--упр.4
+--SELECT subj_name, hour FROM subject where semester = 4; 
+--упр.5
+--SELECT DISTINCT mark FROM exam_marks;
+--упр.6
+--SELECT name FROM student where kurs >= 3;
+--упр.7
+--SELECT surname, name, kurs FROM student WHERE stipend > 140;
+--упр.8
+--SELECT subj_name FROM subject WHERE hour > 30;
+--упр.9
+--SELECT * FROM university WHERE rating > 300;
+--упр.10
+--SELECT surname, name, kurs FROM student WHERE stipend >= 100 AND city = 'Воронеж';
+--упр.11
+--Выводит список тех студентов, которые получают стипендию больше 100, тех, кто родился раньше 10.03.1980, и тех, чей ID не больше 1003
+--упр.12
+--Выводит список тех студентов, у кого ID меньше 1003, и тех, кто одновременно родился не 10.03.1980 и имеет стипендию не больше 100
+--упр.13
+--SELECT * FROM student WHERE birthday < '1998-09-08' AND kurs = 1;
+--упр.14
+--SELECT * FROM subject WHERE semester = 1 AND hour > 100;
+--упр.15
+--SELECT * FROM lecturer WHERE city = 'Воронеж';
+--упр.16
+--SELECT * FROM university WHERE city = 'Москва' AND rating < 296;
+--упр.17
+--SELECT * FROM student WHERE city = 'Воронеж' AND stipend IS NULL;
+--упр.18
+--SELECT * FROM student WHERE birthday > '2003-09-08';
+--упр.19
+--SELECT * FROM student WHERE city IS NULL;

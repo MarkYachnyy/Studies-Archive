@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль товара</title>
+    <link rel="stylesheet" href="/static/css/product.css">
+</head>
+<body>
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/utils.js"></script>
+
+    <header>
+        <nav class="navigation__bar">
+            <a class="nav__link" href="/all-products">Все товары</a>
+            <a class="nav__link" href="/cart">Корзина</a>
+            <a class="nav__link" href="/all-orders">Заказы</a>
+            <a class="nav__link" >Профиль</a>
+        </nav>
+    </header>
+
+    <h1>Страница товара <span class="span__product__name"></span></h1>
+
+    <img src="/static/images/jonkler.webp" class="image__product">
+    <p class="p__product__name"></p>
+    <p>Продавец <a class="link__seller"></a></p>
+    <div class="div__in__cart">
+        <p class="p__in__cart__data">
+
+        </p>
+        <button class="button__add__to__cart">В корзину</button>
+        <button class="button__minus__one">-</button>
+        <button class="button__plus__one">+</button>
+    </div>
+
+    <script type="text/javascript" src="/static/js/product.js"></script>
+</body>
+</html>

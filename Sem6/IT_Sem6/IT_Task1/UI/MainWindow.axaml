@@ -1,0 +1,77 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModel="clr-namespace:IT_Task1.ViewModel"
+        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="450"
+        x:Class="IT_Task1.MainWindow"
+        x:DataType="viewModel:MainWindowViewModel"
+        Title="IT_Task1">
+    <Design.DataContext>
+        <viewModel:MainWindowViewModel/>
+    </Design.DataContext>
+    <Grid Background="Gainsboro"
+          HorizontalAlignment="Stretch"
+          VerticalAlignment="Stretch"
+          ColumnDefinitions="*,*,*"
+          RowDefinitions="Auto,Auto,Auto,Auto, Auto">
+        <TextBlock Grid.Row="0" Grid.Column="0" TextAlignment="Center" LineHeight="100" FontSize="25">
+            Конец Очереди
+        </TextBlock>
+        <Canvas HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" Height="50"
+                Width="250" Name="Canvasdd">
+            <Rectangle Height="50" Width="50" Fill="Black" Canvas.Left="0"></Rectangle>
+            <Rectangle Height="46" Width="46" Fill="White" Canvas.Left="2" Canvas.Top="2"></Rectangle>
+
+            <Rectangle Height="50" Width="50" Fill="Black" Canvas.Left="50"></Rectangle>
+            <Rectangle Height="46" Width="46" Fill="White" Canvas.Left="52" Canvas.Top="2"></Rectangle>
+
+            <Rectangle Height="4" Width="4" Fill="Black" Canvas.Top="23" Canvas.Left="123"></Rectangle>
+            <Rectangle Height="4" Width="4" Fill="Black" Canvas.Top="23" Canvas.Left="113"></Rectangle>
+            <Rectangle Height="4" Width="4" Fill="Black" Canvas.Top="23" Canvas.Left="133"></Rectangle>
+
+            <Rectangle Height="50" Width="50" Fill="Black" Canvas.Left="150"></Rectangle>
+            <Rectangle Height="46" Width="46" Fill="White" Canvas.Left="152" Canvas.Top="2"></Rectangle>
+
+            <Rectangle Height="50" Width="50" Fill="Black" Canvas.Left="200"></Rectangle>
+            <Rectangle Height="46" Width="46" Fill="White" Canvas.Left="202" Canvas.Top="2"></Rectangle>
+        </Canvas>
+        <TextBlock Grid.Row="0" Grid.Column="2" TextAlignment="Center" LineHeight="100" FontSize="25">
+            Начало очереди
+        </TextBlock>
+        <Canvas Grid.Column="0" Grid.Row="1" Height="50" Width="10" HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+            <Line StartPoint="0,0" EndPoint="-10,10" StrokeThickness="3" Canvas.Left="5" Stroke="Black"></Line>
+            <Line StartPoint="0,0" EndPoint="0,50" StrokeThickness="3" Canvas.Left="5" Stroke="Black"></Line>
+            <Line StartPoint="0,0" EndPoint="10,10" StrokeThickness="3" Canvas.Left="5" Stroke="Black"></Line>
+        </Canvas>
+        <TextBlock Grid.Row="1" Grid.Column="1" TextAlignment="Center" FontSize="25" Text="{Binding TextBlockQueueSize}">
+            Размер очереди: 0
+        </TextBlock>
+        <Canvas Grid.Column="2" Grid.Row="1" Height="50" Width="10" HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+            <Line StartPoint="0,50" EndPoint="-10,40" StrokeThickness="3" Canvas.Left="5" Stroke="Black"></Line>
+            <Line StartPoint="0,0" EndPoint="0,50" StrokeThickness="3" Canvas.Left="5" Stroke="Black"></Line>
+            <Line StartPoint="0,50" EndPoint="10,40" StrokeThickness="3" Canvas.Left="5" Stroke="Black"></Line>
+        </Canvas>
+        <TextBox Grid.Column="0" Grid.Row="2" Margin="10" Text="{Binding TextBoxNewElement}"></TextBox>
+        <Button Grid.Column="0" Grid.Row="3" Margin="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Command="{Binding ButtonInqueueOnClick}">
+            <TextBlock HorizontalAlignment="Stretch" TextAlignment="Center">
+                Добавить элемент в конец
+            </TextBlock>
+        </Button>
+        <TextBlock Grid.Column="2" Grid.Row="2" Margin="5" HorizontalAlignment="Stretch" TextAlignment="Center" FontSize="25" Text="{Binding TextBlockCurrentElement}">Текущий элемент: -</TextBlock>
+        <Button Grid.Column="2" Grid.Row="3" Margin="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Command="{Binding ButtonDequeueOnClick}">
+            <TextBlock HorizontalAlignment="Stretch" TextAlignment="Center">
+                Извлечь текущий элемент
+            </TextBlock>
+        </Button>
+        <TextBlock Grid.Row="4" Grid.Column="0" TextAlignment="Center" FontSize="15" Foreground="Red" Text="{Binding TextBlockInputError}">
+            
+        </TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="2" TextAlignment="Center" FontSize="15" Foreground="Red" Text="{Binding TextBlockOutputError}">
+            
+        </TextBlock>
+    </Grid>
+
+</Window>

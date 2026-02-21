@@ -1,0 +1,10 @@
+---
+- name: Configuring nginx
+  hosts: all
+  become: true
+
+  vars_files:
+    - roles/server_cert/vars/main.yml
+
+  roles:
+    - nginx

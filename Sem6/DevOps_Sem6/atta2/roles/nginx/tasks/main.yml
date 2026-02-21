@@ -1,0 +1,51 @@
+- name: Install nginx
+  ansible.builtin.apt:
+    name: nginx
+    state: present
+    update_cache: true
+
+- name: Copy nginx configuration
+  ansible.builtin.copy:
+    src: "{{ nginx_config_src }}"
+    dest: /etc/nginx/sites-available/default
+    mode: '0644'
+
+- name: Create symlink
+  ansible.builtin.file:
+    src: /etc/nginx/sites-available/default
+    dest: /etc/nginx/sites-enabled/default
+    state: link
+    force: true
+
+- name: Create SSL certificate directory if absent
+  ansible.builtin.file:
+    path: "{{ nginx_ssl_dir }}"
+    state: directory
+    mode: '0755'
+
+- name: Copy SSL certificate
+  ansible.builtin.copy:
+    remote_src: true
+    src: "{{ issued_cert_cert_path }}"
+    dest: "{{ nginx_ssl_dir }}/task-service.local.crt"
+    mode: '0644'
+
+- name: Copy SSL private key
+  ansible.builtin.copy:
+    remote_src: true
+    src: "{{ issued_cert_csr_keyout_path }}"
+    dest: "{{ nginx_ssl_dir }}/task-service.local.key"
+    mode: '0600'
+
+- name: Test nginx configuration
+  ansible.builtin.command:
+    nginx -t
+  register: nginx_config_test
+  changed_when: false
+  failed_when: nginx_config_test.rc != 0  
+
+- name: Reload nginx if configuration is valid
+  ansible.builtin.service:
+    name: nginx
+    state: reloaded
+  when: nginx_config_test.rc == 0

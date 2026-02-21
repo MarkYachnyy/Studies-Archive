@@ -1,0 +1,47 @@
+.overlay__create__new__payment{
+    background-color: rgba(0,0,0,0.3);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.overlay__general__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay__general__info, .overlay__overall__amount, .overlay__spending__participants{
+    padding: 10px;
+}
+
+.overlay__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.span__my__user__id{
+    color: red;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.span__my__user__id:hover{
+    cursor: pointer;
+}
+.text__debt__count, .text__spending__count, .text__friends__count, .text__sent__requests__count, .text__incoming__requests__count {
+    margin-left: 10px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background: white;
+}

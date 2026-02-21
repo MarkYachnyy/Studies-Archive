@@ -1,0 +1,24 @@
+--упр.1
+--SELECT * FROM student st WHERE city = (SELECT city FROM university un WHERE st.univ_id = un.univ_id);
+--упр.2
+--SELECT * FROM student st WHERE city != (SELECT city FROM university un WHERE st.univ_id = un.univ_id) ORDER BY st.univ_id, st.kurs;
+--упр.3
+--SELECT * FROM lecturer le WHERE city != (SELECT city FROM university un WHERE le.univ_id = un.univ_id) ORDER BY le.univ_id, le.city;
+--упр.4
+--SELECT * FROM subject su1 WHERE hour = (SELECT MAX(hour) FROM subject su2 WHERE su2.semester = su1.semester) ORDER BY su1.semester;
+--упр.5
+--SELECT * FROM student st1 WHERE stipend > (SELECT AVG(stipend) FROM student st2 WHERE st2.kurs = st1.kurs);
+--упр.6
+--SELECT * FROM student st1 WHERE stipend = (SELECT MIN(st2.stipend) FROM student st2 WHERE st2.univ_id = st1.univ_id) ORDER BY st1.univ_id, st1.stipend;
+--упр.7
+--SELECT * FROM university un WHERE (SELECT COUNT(*) FROM student st WHERE st.univ_id = un.univ_id) > 50 ORDER BY rating;
+--упр.8
+--SELECT * FROM university un WHERE (SELECT COUNT(*) FROM lecturer le WHERE le.univ_id = un.univ_id) > 5 ORDER BY rating;
+--упр.9
+--SELECT * FROM student st WHERE (SELECT MIN(mark) FROM exam_marks ex WHERE ex.student_id = st.student_id) = 5 ORDER BY univ_id, kurs;
+--упр.10
+--SELECT * FROM student st WHERE (SELECT MIN(mark) FROM exam_marks ex WHERE ex.student_id = st.student_id) = 2 ORDER BY univ_id, kurs;
+--упр.11
+--SELECT * FROM student st WHERE (SELECT AVG(mark) FROM exam_marks ex WHERE ex.student_id = st.student_id) > 4;
+--упр.12
+--SELECT * FROM student st WHERE (SELECT MIN(mark) FROM exam_marks ex WHERE ex.student_id = st.student_id) = 5 AND (SELECT city FROM university un WHERE un.univ_id = st.univ_id) != st.city;

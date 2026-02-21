@@ -1,0 +1,254 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  font-family: 'Oswald', sans-serif;
+  height: 100%;
+}
+header{
+  padding: 10px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  font-style: normal;
+  text-align: left;
+  
+  color: #000000;
+}
+.logo__upper{
+  font-weight: 700;
+  font-size: 60px;
+  color:#000000;
+  text-decoration: none;
+}
+.logo__lower{
+  font-weight: 500;
+  font-size:20px;
+  text-transform: uppercase;
+}
+.logo__upper__span{
+  color: #00e600;
+}
+.top__right__navigation__bar{
+  display: flex;
+}
+.nav__link{
+  height: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  
+  color: #000000;
+  
+  text-transform: uppercase;
+  margin-left: 46px;
+  text-decoration: none;
+}
+.nav__link:hover{
+  color: #00e600;
+}
+.blog{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  
+  background-color: #e3e8e6;
+  padding: 60px 0;
+}
+.blog__header{
+  margin-bottom: 60px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+  
+  color: #000000;
+}
+.blog__content{
+  display: flex;
+  justify-content: center;
+}
+.blog__article{
+  display: flex;
+  flex-direction: column;
+  background-color:#FFFFFF;
+  padding: 20px;
+  margin: 0 35px;
+  /*border: #00e600 solid 4px;*/
+  border-radius: 4px;
+  width: min-content;
+  border: #32cf32 solid 5px;
+  border-radius: 5px;
+}
+.article__header{
+  width: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+.article__image{
+  margin: 24px 0;
+  width:325px;
+  height:216px;
+  border: #32cf32 solid 5px;
+  border-radius: 5px;
+}
+.article__text{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+}
+.article__link{
+  margin-top: 20px;
+  padding: 10px;
+  border: 4px solid #000000;
+  border-radius: 5px;
+  align-self: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 550;
+  color: #000000;
+}
+.article__link:hover{
+  background-color: #00e600;
+  color: #ffffff;
+}
+
+.bottom__navigation_bar{
+  background: #32cf32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
+.footer__header{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+.email__input{
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  
+  color: #FFFFFF;
+
+  padding: 15px 95px;
+  background-color: #32cf32;
+  border: 3px solid #FFFFFF;
+  margin: 28px 0;
+}
+.email__input::-webkit-input-placeholder{
+  color: #FFFFFF;
+}
+.subscription__submit{
+  padding: 12px 34px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+
+  text-align: center;
+  text-transform: uppercase;
+  border:3px solid #000000;
+  text-transform: uppercase;
+}
+.subscription__submit:hover{
+  color: #32cf32;
+}
+.copyright{
+  padding: 28px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.enter__link__image{
+  height: 25px;
+  width: 25px;
+}
+.enter__overlay{
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.enter__overlay__header{
+  font-size: 50px;
+}
+.enter__overlay__content{
+  padding: 30px;
+  border: #00e600 solid 10px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.enter__login__input, .enter__password__input{
+  width: 300px;
+  font-size: 30px;
+  margin: 10px 0;
+  padding: 10px;
+}
+.enter__login__input::-webkit-input-placeholder, .enter__password__input::-webkit-input-placeholder{
+  font-family: 'Oswald', sans-serif;
+}
+.enter__overlay__btn__enter, .enter__overlay__btn__cancel, .enter__overlay__unlog__button, .enter__overlay__ok__button{
+  font-size: 30px;
+  padding: 5px;
+  font-family: 'Oswald', sans-serif;
+  margin: 0 5px;
+  border:#000000 solid 5px;
+  border-radius: 10px;
+}
+.enter__overlay__btn__enter:hover, .enter__overlay__ok__button:hover{
+  border-color: #00e600;
+  cursor: pointer;
+}
+.enter__overlay__btn__cancel:hover, .enter__overlay__unlog__button:hover{
+  border-color: #FF0000;
+  cursor: pointer;
+}
+
+.enter__overlay__logged{
+  display: none;
+}
+.enter__overlay__username__span{
+  color:#00e600;
+}

@@ -1,0 +1,20 @@
+--упр.1
+/*SELECT (student_id || ';' || UPPER(surname) || ';' || UPPER(name) || ';'
+		|| stipend || ';' || kurs || ';' || UPPER(city) || ';'
+		|| TO_CHAR(birthday, 'DD.MM.YYYY') || ';' || univ_id) FROM student;*/
+--упр.2
+/*SELECT SUBSTR(name, 1, 1) || '.' || UPPER(surname) || '; место жительства - ' || UPPER(city)
+		|| '; родился - ' || TO_CHAR(birthday, 'DD.MM.YYYY') FROM student;*/
+--упр.3
+/*SELECT LOWER(SUBSTR(name, 1, 1)) || '.' || LOWER(surname) || '; место жительства - ' || LOWER(city)
+		|| '; родился: ' || TO_CHAR(birthday, 'DD-mon-YYYY') FROM student;*/
+--упр.4
+--SELECT name || ' ' || surname || ' родился в ' || TO_CHAR(birthday, 'YYYY') || ' году' FROM student;
+--упр.5
+--SELECT surname, name, stipend*100 FROM student;
+--упр.6
+--SELECT name || ' ' || surname || ' родился в ' || TO_CHAR(birthday, 'YYYY') || ' году' FROM student WHERE kurs IN (1,2,4);
+--упр.7
+--SELECT 'Код-' || univ_id || '; ' || univ_name || '-г.' || city || '; Рейтинг=' || rating FROM university;
+--упр.8
+--SELECT 'Код-' || univ_id || '; ' || univ_name || '-г.' || city || '; Рейтинг=' || ROUND(rating/100)*100 FROM university;

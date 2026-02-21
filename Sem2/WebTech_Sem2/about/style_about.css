@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-family: 'Oswald', sans-serif;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+header{
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-style: normal;
+    text-align: left;
+    
+    color: #000000;
+}
+.logo__upper{
+    font-weight: 700;
+    font-size: 60px;
+    color:#000000;
+    text-decoration: none;
+}
+.logo__lower{
+    font-weight: 500;
+    font-size:20px;
+    text-transform: uppercase;
+}
+.logo__upper__span{
+    color: #00e600;
+}
+.top__right__navigation__bar{
+    display: flex;
+}
+.nav__link{
+    height: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #000000;
+    
+    text-transform: uppercase;
+    margin-left: 46px;
+    text-decoration: none;
+}
+.nav__link:hover{
+    color: #00e600;
+}
+.content{
+    padding: 40px;
+    background-color: #e3e8e6;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.about__website{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.about__website__image{
+    aspect-ratio: 3 / 2;
+    width: 30%;
+    border: #32cf32 solid 5px;
+    border-radius: 5px;
+}
+.about__website__article{
+    max-width: 40%;
+    background-color: #FFFFFF;
+    border: #32cf32 solid 5px;
+    border-radius: 5px;
+    margin-left: 30px;
+    font-size: 27px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.social__media{
+    background-color: #32cf32;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social__media__header{
+    font-size: 40px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.social__media__content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.social__media__section{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: #000000 solid 5px;
+    border-radius: 5px;
+}
+.social__media__link{
+    padding: 3px 10px;
+    border-radius: 6px;
+    margin: 4px 0px;
+}
+.vk__link{
+    color: #FFFFFF;
+    background-color: #597da3;
+}
+.tg__link{
+    color: #FFFFFF;
+    background-color: #1faee9;
+}
+.email__link{
+    color: #FFFFFF;
+    background-color: #ff0000;
+    cursor: pointer;
+}
+.copyright{
+    padding: 28px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #000000;
+}
+
+.enter__link__image{
+    height: 25px;
+    width: 25px;
+  }
+  .enter__overlay{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .enter__overlay__header{
+    font-size: 50px;
+  }
+  .enter__overlay__content{
+    padding: 30px;
+    border: #00e600 solid 10px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .enter__login__input, .enter__password__input{
+    width: 300px;
+    font-size: 30px;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  .enter__login__input::-webkit-input-placeholder, .enter__password__input::-webkit-input-placeholder{
+    font-family: 'Oswald', sans-serif;
+  }
+  .enter__overlay__btn__enter, .enter__overlay__btn__cancel, .enter__overlay__unlog__button, .enter__overlay__ok__button{
+    font-size: 30px;
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 5px;
+    border:#000000 solid 5px;
+    border-radius: 10px;
+  }
+  .enter__overlay__btn__enter:hover, .enter__overlay__ok__button:hover{
+    border-color: #00e600;
+    cursor: pointer;
+  }
+  .enter__overlay__btn__cancel:hover, .enter__overlay__unlog__button:hover{
+    border-color: #FF0000;
+    cursor: pointer;
+  }
+  
+  .enter__overlay__logged{
+    display: none;
+  }
+  .enter__overlay__username__span{
+    color:#00e600;
+  }

@@ -1,0 +1,11 @@
+#SPDX-License-Identifier: MIT-0
+---
+# vars file for roles/server_cert
+
+issued_cert_dir: /usr/src/nginx_ansible/cert
+issued_cert_csr_config_src: /home/vagrant/ansible_scripts/roles/server_cert/files/task-service.local.conf
+issued_cert_csr_config_dest: "{{ issued_cert_dir }}/task-service.local.conf"
+issued_cert_csr_keyout_path: /etc/ssl/private/task-service.local.key
+issued_cert_csr_path: "{{ issued_cert_dir }}/task-service.local.csr"
+issued_cert_not_after: +3650d
+issued_cert_cert_path: /etc/ssl/certs/task-service.local.crt

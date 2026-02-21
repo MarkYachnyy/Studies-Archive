@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Счёт</title>
+    <link rel="stylesheet" type="text/css" href="css/spending_page.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <div class="overlay__pay__debt">
+        <div class="overlay__pay__debt__content">
+            <h2>Погасить долг</h2>
+            <div style="display: flex; flex-direction: row; align-items: center">
+                <p>Сумма: </p>
+                <input class="input__debt__payment__amount" style="width: 100px; height: 30px; margin: 10px;">
+                <p> ₽</p>
+            </div>
+            <button class="button__set__whole__debt__amount"></button>
+            <p class="debt__payment__status"></p>
+            <div style="display: flex; flex-direction: row">
+                <button class="button__confirm__debt__payment">ПОГАСИТЬ</button>
+                <button class="button__close__pay__debt__overlay">ОТМЕНА</button>
+            </div>
+        </div>
+    </div>
+    <div class="overlay__delete__spending">
+        <div class="overlay__delete__spending__content">
+            <h2>Вы уверены?</h2>
+            <div style="display: flex; flex-direction: row; align-items: center">
+                <button class="button__cancel__delete__spending" style="background: red; color: white; padding: 10px; margin: 10px">
+                    Отмена
+                </button>
+                <button class="button__confirm__delete__spending" style="background: gray; color: white; padding: 10px; margin: 10px">
+                    Удалить
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class = "content" style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+        <div class = "div__spending__data" style="display:flex; align-items: center; flex-direction: column; background: #DDDDDD; border-radius: 10px; padding: 10px;">
+            <div style="display: flex; flex-direction: row; align-items: center">
+                <h1 class="header__spending__name">Счёт "<span class="span__spending__name"></span>"</h1>
+                <input class="input__spending__new__name" style="font-size: 30px; width: 150px; display: none">
+                <button class="button__rename__spending" style="display: none; padding: 5px; margin: 5px">
+                    <img class="image__button__rename__spending" style="width: 20px; height: 20px;" src="icon/pen.png">
+                </button>
+                <button class="button__cancel__rename__spending" style="display:none; padding: 5px; margin: 5px">
+                    <img style="width: 20px; height: 20px;" src="icon/close.png">
+                </button>
+            </div>
+            <h2>Дата счёта: <span class="span__spending__date"></span></h2>
+            <h3>Создал пользователь <span class="span__spending__creator__name"></span></h3>
+            <h3>Заплатил пользователь <span class="span__spending__payer__name"></span></h3>
+            <h2>Участники счёта: </h2>
+            <div class="div__spending__participants">
+
+            </div>
+            <div style="display: flex; flex-direction: row; align-items: center">
+                <button class="button__participants__previous__page" style="padding: 5px; margin: 5px">
+                    <
+                </button>
+                <p class="text__participants__current__page">0 из 0</p>
+                <button class="button__participants__next__page" style="padding: 5px; margin: 5px">
+                    >
+                </button>
+            </div>
+            <btn class="button__open__debt__payment__overlay" style="background: plum; color: white; padding: 20px; margin: 10px;">Погасить свой долг</btn>
+            <btn class="button__delete__spending" style="background: red; color: white; padding: 20px; margin: 10px;">Удалить счёт</btn>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/spending_page.js"></script>
+</body>
+</html>

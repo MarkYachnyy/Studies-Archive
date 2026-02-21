@@ -1,0 +1,4 @@
+/ssh_keys
+.vscode/
+.ansible/
+/venv/
