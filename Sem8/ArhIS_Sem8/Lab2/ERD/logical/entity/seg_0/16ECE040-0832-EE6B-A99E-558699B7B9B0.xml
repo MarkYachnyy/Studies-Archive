@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="16ECE040-0832-EE6B-A99E-558699B7B9B0" name="Schedule">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:26:35 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="83763730-7635-394E-7946-BC69BDA95DB8">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:33:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>B1D948A4-F7FF-CEFA-9582-41D2C3A8FD24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lastUpdate" id="318B7993-24DF-712E-0453-FFE5C23F1827">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:33:25 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>208D3F0A-2D95-095B-F98F-DCBDE62C9553</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="A7667420-904A-A026-C4B3-03FCEF7F69B5">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:58:59 UTC</createdTime>
+<generatorID>E387396C-E82E-19C3-7F8B-473E10B7734E</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<referedAttribute>5CE6AB9F-582D-845A-0E16-E9F372FF272A</referedAttribute>
+<use>0</use>
+<domain>B1D948A4-F7FF-CEFA-9582-41D2C3A8FD24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="validFrom" id="93A8C690-A847-E738-B433-2B406890AE49">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:16:41 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>208D3F0A-2D95-095B-F98F-DCBDE62C9553</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="validUntil" id="35EC2CE3-6378-B5DD-A16E-BC66A541007D">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:17:22 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>208D3F0A-2D95-095B-F98F-DCBDE62C9553</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D19A9963-AD63-4C6D-C473-BA5DEB160C7C" name="Schedule PK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:33:22 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>83763730-7635-394E-7946-BC69BDA95DB8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3691D891-7A9A-394E-84DB-93D35BE24D6B" schemaObject="39BCFE36-2BB8-36AD-299D-5C1D168252F0" name="Display">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Display</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B5CB4A95-1093-441C-F850-AC4337DC2FCE">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Display</sourceObjSchema>
+<sourceObjName>id</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="currentTime" id="96481D27-33FF-F6FD-E2F6-A4E0C7585D2D">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Display</sourceObjSchema>
+<sourceObjName>currentTime</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="serialNumber" id="BCAC8EE5-C95C-D22D-B262-2C066326C7D6">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Display</sourceObjSchema>
+<sourceObjName>serialNumber</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastSyncTime" id="946B6D0E-CD7E-35EE-1096-A6B6A10C25E1">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Display</sourceObjSchema>
+<sourceObjName>lastSyncTime</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="station" id="3AE701CF-3F29-FEB0-1B94-645A1666660B">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Display</sourceObjSchema>
+<sourceObjName>station</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,100,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="scheduleId" id="B8E06F12-F935-B88B-02E5-DAB3CDA015F2">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Display</sourceObjSchema>
+<sourceObjName>scheduleId</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3AFBF414-488D-880D-ACF2-9A2A55029C84" referredColumn="0B7D2A8B-0062-BAF9-2ABA-C65E50A4D408"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="45F01022-4A7E-879C-F5AE-21EA6DC9048F" name="Display__IDX">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Display__IDX</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5CB4A95-1093-441C-F850-AC4337DC2FCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E7FF900-CE51-1D07-1CF4-546B73A051D5" name="Display_Schedule_FK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8E06F12-F935-B88B-02E5-DAB3CDA015F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

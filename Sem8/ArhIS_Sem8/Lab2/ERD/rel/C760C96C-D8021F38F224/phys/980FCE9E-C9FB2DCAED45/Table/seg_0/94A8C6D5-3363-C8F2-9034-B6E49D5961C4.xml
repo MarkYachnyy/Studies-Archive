@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TrainSchedule" directorySegmentName="seg_0" id="94A8C6D5-3363-C8F2-9034-B6E49D5961C4">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="scheduleId" id="4CF83C4A-EA72-79D1-4FC7-FB769FDD7E6C">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="plannedArrival" id="854B906F-EAF5-7D15-C072-D6B3AB2965FA">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="plannedDeparture" id="8CCA9552-23B8-1CFF-47B5-4A7B1E084759">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="id" id="B42EA81F-C8CF-E4A0-26C8-E5F2C5E5201F">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="trainId" id="CD1EB339-68D5-70D3-FA7D-AC5CCF123C6D">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="destinationStation" id="DEEA46AF-5460-7B73-67EB-8B39E0B8BE65">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TrainSchedule_Schedule_FK" id="2171CE32-7144-880B-C59E-7463AB915F8E">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TrainSchedule__IDX" id="E1A37596-5A21-96B3-B541-8EE8B34B5314">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

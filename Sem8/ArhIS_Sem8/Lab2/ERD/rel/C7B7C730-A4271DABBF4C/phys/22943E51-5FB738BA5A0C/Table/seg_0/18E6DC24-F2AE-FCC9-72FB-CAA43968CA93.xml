@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="Violation" directorySegmentName="seg_0" id="18E6DC24-F2AE-FCC9-72FB-CAA43968CA93">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<schemaObject>39BCFE36-2BB8-36AD-299D-5C1D168252F0</schemaObject>
+<database>706F0F6B-5DAC-4CB6-5B44-8C869140B098</database>
+<filegroup>369AD193-4BEC-66F6-F7E0-8F0D96BF9EE7</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id" id="0FF26524-D5AA-92F2-CEA7-DDA436B1C30C">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="trainScheduleId" id="203A7BB3-6459-5232-FDA2-1E2E332C1A9B">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="plannedTime" id="86BFFDC2-D7D6-22DD-667E-0B2A0EDDDD7D">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="displayId" id="9569D64F-26FD-A6E2-CD8D-C21F114A0C2D">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="type" id="DD8BBC12-7DEB-5358-B867-24FD34A9F075">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<collation>Cyrillic_General_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="sensorEventId" id="E23266DC-4CFE-A6FE-B307-32D0B8B2A717">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="actualTime" id="F1CAA9FE-B171-DE93-5E84-7AD35DD35769">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="Violation_SensorEvent_FK" id="A195ECA2-467D-F3F2-87F2-8C8608C9BEC2">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="Violation_TrainSchedule_FK" id="A5207D16-B1DE-28A4-7B05-37B3F91AF861">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="Violation_Display_FK" id="DB7F3311-7B19-7438-886A-205F4375C9B7">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="Violation__IDX" id="BA08C547-339A-FDCD-97CE-F6496FBCCFF7">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>369AD193-4BEC-66F6-F7E0-8F0D96BF9EE7</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.UniqueProxySqlServerv2k5" name="Violation__UN" id="A03D7646-0A17-8A82-02A2-14F199ED8961">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<fileGroup>369AD193-4BEC-66F6-F7E0-8F0D96BF9EE7</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</UniqueKey>
+</uniqueKeys>
+</TableProxySqlServerv2k5>

@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="ArhisLab2_dbo" directorySegmentName="seg_0" id="39BCFE36-2BB8-36AD-299D-5C1D168252F0">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</SchemaObject>

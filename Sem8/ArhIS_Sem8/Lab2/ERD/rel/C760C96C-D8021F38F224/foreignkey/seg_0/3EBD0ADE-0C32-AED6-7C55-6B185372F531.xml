@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3EBD0ADE-0C32-AED6-7C55-6B185372F531" containerWithKeyObject="D934A002-E147-CA24-38D1-BB2215FF3E01" localFKIndex="571ADB67-9F65-1697-E458-AAF0303447B9" name="Violation_TrainSchedule_FK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 12:05:01 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<referredTableLongName>TrainSchedule</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>94A8C6D5-3363-C8F2-9034-B6E49D5961C4</referredTableID>
+<keyObject>E1A37596-5A21-96B3-B541-8EE8B34B5314</keyObject>
+<referredKeyID>E1A37596-5A21-96B3-B541-8EE8B34B5314</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

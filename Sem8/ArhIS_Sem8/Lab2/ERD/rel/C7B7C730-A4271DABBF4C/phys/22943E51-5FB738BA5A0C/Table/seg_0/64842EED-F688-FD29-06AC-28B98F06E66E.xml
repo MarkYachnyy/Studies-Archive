@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="Sensor" directorySegmentName="seg_0" id="64842EED-F688-FD29-06AC-28B98F06E66E">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<schemaObject>39BCFE36-2BB8-36AD-299D-5C1D168252F0</schemaObject>
+<database>706F0F6B-5DAC-4CB6-5B44-8C869140B098</database>
+<filegroup>369AD193-4BEC-66F6-F7E0-8F0D96BF9EE7</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="active" id="08E024D9-9056-0926-A674-2B5825E2356C">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="modelName" id="A4DE2D98-0ABB-60B2-9904-67E4E6E00ED8">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<collation>Cyrillic_General_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id" id="B52F40F5-B6F8-3554-471B-584C168EF820">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="serialNumber" id="F16D62B7-3133-9CB9-0EB4-78B329E18041">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="Sensor__IDX" id="8134349F-C075-7EE7-6ADB-DF6E64CBEA74">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>369AD193-4BEC-66F6-F7E0-8F0D96BF9EE7</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

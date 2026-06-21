@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DBF2E6CD-783A-20AF-E549-51426B78C62C" containerWithKeyObject="18E6DC24-F2AE-FCC9-72FB-CAA43968CA93" localFKIndex="DB7F3311-7B19-7438-886A-205F4375C9B7" name="Violation_Display_FK">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Violation_Display_FK</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<referredTableLongName>ArhisLab2_dbo.Display</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3691D891-7A9A-394E-84DB-93D35BE24D6B</referredTableID>
+<keyObject>45F01022-4A7E-879C-F5AE-21EA6DC9048F</keyObject>
+<referredKeyID>45F01022-4A7E-879C-F5AE-21EA6DC9048F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

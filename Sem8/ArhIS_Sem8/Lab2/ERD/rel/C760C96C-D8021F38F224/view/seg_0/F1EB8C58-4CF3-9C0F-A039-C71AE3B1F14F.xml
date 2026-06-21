@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="F1EB8C58-4CF3-9C0F-A039-C71AE3B1F14F" name="DisplayStatusView">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:57:10 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<ordsAlias>view_1</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW VIEW_CurrentDisplayInfo AS
+SELECT 
+  d.id AS display_id,
+  d.currentTime,
+  ts.destinationStation,
+  TIMESTAMPDIFF(MINUTE, MAX(se.eventTime), NOW()) AS elapsed_since_departure,
+  s.lastUpdate AS schedule_version,
+  d.status,
+  a.text AS current_ad
+FROM Display d
+JOIN Schedule s ON d.id = s.id
+JOIN TrainSchedule ts ON s.id = ts.id  
+LEFT JOIN SensorEvent se ON ts.id = se.trainScheduleId AND se.eventType = 'DEPARTURE'
+LEFT JOIN Advertisement a ON d.id = a.displayId
+WHERE d.status = 'active'
+  AND ts.plannedDeparture >= DATE_SUB(NOW(), INTERVAL 10 MINUTE)  -- Последние 10 мин
+GROUP BY d.id, ts.destinationStation;
+]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="display_id" id="7A545B50-F855-509A-D181-E5F97F6E169D">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:57:41 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>display_id</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>display_id</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="currentTime" id="7E161E24-B0D8-5A7F-23CA-DA6BCD69B232">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:57:41 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATETIME</dataType>
+<headerAlias>currentTime</headerAlias>
+<reference>false</reference>
+<referencedColumn>9FC18257-6F12-5230-4965-4F895EF26F6F</referencedColumn>
+<table>5FC4DED5-4587-8A28-D917-9C68AE9DFD07</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="destinationStation" id="1F631E6E-8150-57EF-C987-D03EC28C98A6">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:57:41 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR (100)</dataType>
+<headerAlias>destinationStation</headerAlias>
+<reference>false</reference>
+<referencedColumn>DEEA46AF-5460-7B73-67EB-8B39E0B8BE65</referencedColumn>
+<table>94A8C6D5-3363-C8F2-9034-B6E49D5961C4</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="elapsed_since_departure" id="9B8C9787-3C45-192E-5E04-DA1EDB658CF0">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:57:41 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>elapsed_since_departure</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>elapsed_since_departure</headerAlias>
+<expression>TIMESTAMPDIFF(MINUTE,MAX(se.eventTime),NOW())</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="schedule_version" id="E66F15FC-2C67-51EF-4227-CF831B41396B">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:57:41 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>schedule_version</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>schedule_version</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="status" id="D3F2BEB8-C393-D7B5-4DAB-133860739BED">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:57:41 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>status</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="current_ad" id="085F322A-A665-40FB-6DE5-724041775DF3">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:57:41 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>current_ad</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>current_ad</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5FC4DED5-4587-8A28-D917-9C68AE9DFD07">
+<container>true</container>
+<tableName>Display</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DB209A39-96E4-91EE-E511-643B6085610F">
+<container>true</container>
+<tableName>Schedule</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="94A8C6D5-3363-C8F2-9034-B6E49D5961C4">
+<container>true</container>
+<tableName>TrainSchedule</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1E2BB017-FAE9-B741-B025-CD1CBE1575FC">
+<container>true</container>
+<tableName>SensorEvent</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="65AAC41A-699B-1D41-4FC5-3E1E5A854B58">
+<container>true</container>
+<tableName>Advertisement</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9FC18257-6F12-5230-4965-4F895EF26F6F">
+<columnName>currentTime</columnName>
+<tableName>Display</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DEEA46AF-5460-7B73-67EB-8B39E0B8BE65">
+<columnName>destinationStation</columnName>
+<tableName>TrainSchedule</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="426D452D-6C10-886B-226B-A7EA66BC851B">
+<columnName>displayId</columnName>
+<tableName>Advertisement</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C28150B2-9916-97BB-632D-19BE005424A5">
+<columnName>eventType</columnName>
+<tableName>SensorEvent</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="40794031-924A-B3DA-506C-2CFC90C923E5">
+<columnName>eventTime</columnName>
+<tableName>SensorEvent</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D1446CAC-9269-AF65-FB21-77F8A0DA0B7F">
+<columnName>id</columnName>
+<tableName>Display</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8CCA9552-23B8-1CFF-47B5-4A7B1E084759">
+<columnName>plannedDeparture</columnName>
+<tableName>TrainSchedule</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="53E9A197-F720-42A5-E76D-65C54557C37C">
+<columnName>lastUpdate</columnName>
+<tableName>Schedule</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="EB492E47-E2C6-3192-C881-6260CF4D586B">
+<columnName>text</columnName>
+<tableName>Advertisement</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A3DC5668-DB4B-4A03-49B3-3ECAAE8ADC33">
+<columnName>id</columnName>
+<tableName>Schedule</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B42EA81F-C8CF-E4A0-26C8-E5F2C5E5201F">
+<columnName>id</columnName>
+<tableName>TrainSchedule</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

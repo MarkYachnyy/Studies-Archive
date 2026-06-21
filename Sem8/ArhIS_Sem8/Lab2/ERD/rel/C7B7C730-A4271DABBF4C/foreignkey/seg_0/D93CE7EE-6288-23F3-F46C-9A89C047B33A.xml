@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D93CE7EE-6288-23F3-F46C-9A89C047B33A" containerWithKeyObject="18E6DC24-F2AE-FCC9-72FB-CAA43968CA93" localFKIndex="A195ECA2-467D-F3F2-87F2-8C8608C9BEC2" name="Violation_SensorEvent_FK">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Violation_SensorEvent_FK</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<referredTableLongName>ArhisLab2_dbo.SensorEvent</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9710FD92-D6DC-A56E-81C3-A9D4C1F6AC9D</referredTableID>
+<keyObject>1934B61E-2AA3-0732-15EA-8F2E7F597E95</keyObject>
+<referredKeyID>1934B61E-2AA3-0732-15EA-8F2E7F597E95</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

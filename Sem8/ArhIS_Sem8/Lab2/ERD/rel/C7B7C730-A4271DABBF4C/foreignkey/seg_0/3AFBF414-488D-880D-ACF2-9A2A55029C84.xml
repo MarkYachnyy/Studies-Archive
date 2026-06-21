@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3AFBF414-488D-880D-ACF2-9A2A55029C84" containerWithKeyObject="3691D891-7A9A-394E-84DB-93D35BE24D6B" localFKIndex="2E7FF900-CE51-1D07-1CF4-546B73A051D5" name="Display_Schedule_FK">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Display_Schedule_FK</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<referredTableLongName>ArhisLab2_dbo.Schedule</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>08CA5B4D-25D1-D1DB-3F25-07F5F22830F1</referredTableID>
+<keyObject>DAF3BC64-3305-505C-707F-6B4029B35E57</keyObject>
+<referredKeyID>DAF3BC64-3305-505C-707F-6B4029B35E57</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

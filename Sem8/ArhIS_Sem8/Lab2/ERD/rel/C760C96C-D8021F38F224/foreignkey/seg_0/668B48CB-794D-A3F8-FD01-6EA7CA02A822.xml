@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="668B48CB-794D-A3F8-FD01-6EA7CA02A822" containerWithKeyObject="D934A002-E147-CA24-38D1-BB2215FF3E01" localFKIndex="D371B7F3-A2CA-63D6-8722-75DA95C44C1B" name="Violation_Display_FK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:53:16 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<referredTableLongName>Display</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5FC4DED5-4587-8A28-D917-9C68AE9DFD07</referredTableID>
+<keyObject>BF86CDBB-242B-7F11-A3A0-AB8960335FF4</keyObject>
+<referredKeyID>BF86CDBB-242B-7F11-A3A0-AB8960335FF4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

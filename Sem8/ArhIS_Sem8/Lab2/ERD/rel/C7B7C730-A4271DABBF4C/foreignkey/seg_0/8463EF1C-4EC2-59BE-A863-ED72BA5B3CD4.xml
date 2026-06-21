@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8463EF1C-4EC2-59BE-A863-ED72BA5B3CD4" containerWithKeyObject="9710FD92-D6DC-A56E-81C3-A9D4C1F6AC9D" localFKIndex="D6B4EA83-392A-06B4-F391-C44865EA48FC" name="FK_ASS_1">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>FK_ASS_1</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<referredTableLongName>ArhisLab2_dbo.Sensor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>64842EED-F688-FD29-06AC-28B98F06E66E</referredTableID>
+<keyObject>8134349F-C075-7EE7-6ADB-DF6E64CBEA74</keyObject>
+<referredKeyID>8134349F-C075-7EE7-6ADB-DF6E64CBEA74</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="08CA5B4D-25D1-D1DB-3F25-07F5F22830F1" schemaObject="39BCFE36-2BB8-36AD-299D-5C1D168252F0" name="Schedule">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Schedule</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="0B7D2A8B-0062-BAF9-2ABA-C65E50A4D408">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Schedule</sourceObjSchema>
+<sourceObjName>id</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastUpdate" id="6F1E39F8-B7E6-8201-24CF-A2C401742D09">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Schedule</sourceObjSchema>
+<sourceObjName>lastUpdate</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="displayId" id="0527CCC3-0924-73D7-5471-224E146384C0">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Schedule</sourceObjSchema>
+<sourceObjName>displayId</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="validFrom" id="B7C85E2E-57AA-F73D-8F70-97CDFF25AC69">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Schedule</sourceObjSchema>
+<sourceObjName>validFrom</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="validUntil" id="A4162CBE-9085-4AAD-232C-2885190349D6">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Schedule</sourceObjSchema>
+<sourceObjName>validUntil</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DAF3BC64-3305-505C-707F-6B4029B35E57" name="Schedule__IDX">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Schedule__IDX</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B7D2A8B-0062-BAF9-2ABA-C65E50A4D408"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

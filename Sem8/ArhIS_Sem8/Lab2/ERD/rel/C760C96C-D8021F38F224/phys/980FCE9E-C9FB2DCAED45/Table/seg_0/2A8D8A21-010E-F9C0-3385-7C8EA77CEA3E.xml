@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="Sensor" directorySegmentName="seg_0" id="2A8D8A21-010E-F9C0-3385-7C8EA77CEA3E">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="modelName" id="1FFEC452-E19C-3AAE-91A0-CF36662F461A">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="active" id="46693037-2DFE-D966-79EA-2C4E0CB939C8">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="id" id="C14BB138-3840-C5CD-93C4-5B55407ADD02">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="serialNumber" id="DFD0A98C-ADDF-8DF2-6312-0EA19707A443">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="Sensor__IDX" id="EB45210F-33A7-1A05-F6D8-5DB566B415B6">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

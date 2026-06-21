@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB209A39-96E4-91EE-E511-643B6085610F" name="Schedule">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>A6661240-B077-61B2-CE40-650594A5838C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A3DC5668-DB4B-4A03-49B3-3ECAAE8ADC33">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>FC8C27DE-CC3E-2756-A295-9AABA571C7D1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastUpdate" id="53E9A197-F720-42A5-E76D-65C54557C37C">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>3D41AC2D-4423-8600-3767-EA31ADFBE455</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3E0F56C0-30C4-790F-5D00-7B69D122329C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="displayId" id="D4231F63-B380-C931-68D1-D17F2CD8058B">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 12:08:34 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="validFrom" id="CDC566E9-C398-65BC-C4C8-5BDD2937A380">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:30:32 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3E0F56C0-30C4-790F-5D00-7B69D122329C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="validUntil" id="B19BB067-6894-B73F-E14B-42AB73E693AC">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:30:39 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3E0F56C0-30C4-790F-5D00-7B69D122329C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1CDAB6A3-AA38-D2EB-9F28-D8240DAAE8C3" name="Schedule__IDX">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>7DD1B8D1-E2CD-D2C0-8E3E-F188EE89FEDF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3DC5668-DB4B-4A03-49B3-3ECAAE8ADC33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

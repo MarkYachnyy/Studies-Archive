@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18E6DC24-F2AE-FCC9-72FB-CAA43968CA93" schemaObject="39BCFE36-2BB8-36AD-299D-5C1D168252F0" name="Violation">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Violation</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="0FF26524-D5AA-92F2-CEA7-DDA436B1C30C">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Violation</sourceObjSchema>
+<sourceObjName>id</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="DD8BBC12-7DEB-5358-B867-24FD34A9F075">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Violation</sourceObjSchema>
+<sourceObjName>type</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="actualTime" id="F1CAA9FE-B171-DE93-5E84-7AD35DD35769">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Violation</sourceObjSchema>
+<sourceObjName>actualTime</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="plannedTime" id="86BFFDC2-D7D6-22DD-667E-0B2A0EDDDD7D">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Violation</sourceObjSchema>
+<sourceObjName>plannedTime</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sensorEventId" id="E23266DC-4CFE-A6FE-B307-32D0B8B2A717">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Violation</sourceObjSchema>
+<sourceObjName>sensorEventId</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D93CE7EE-6288-23F3-F46C-9A89C047B33A" referredColumn="4F598CE9-DCE2-BFDE-04C1-8002FEBDEC71"/>
+</associations>
+</Column>
+<Column name="trainScheduleId" id="203A7BB3-6459-5232-FDA2-1E2E332C1A9B">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Violation</sourceObjSchema>
+<sourceObjName>trainScheduleId</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DCB24DF2-E58F-188A-1521-C762D128AA83" referredColumn="7FAC19DF-3421-BB6F-E031-AAF871D0163F"/>
+</associations>
+</Column>
+<Column name="displayId" id="9569D64F-26FD-A6E2-CD8D-C21F114A0C2D">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Violation</sourceObjSchema>
+<sourceObjName>displayId</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DBF2E6CD-783A-20AF-E549-51426B78C62C" referredColumn="B5CB4A95-1093-441C-F850-AC4337DC2FCE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA08C547-339A-FDCD-97CE-F6496FBCCFF7" name="Violation__IDX">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Violation__IDX</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FF26524-D5AA-92F2-CEA7-DDA436B1C30C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A03D7646-0A17-8A82-02A2-14F199ED8961" name="Violation__UN">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Violation__UN</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E23266DC-4CFE-A6FE-B307-32D0B8B2A717"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB7F3311-7B19-7438-886A-205F4375C9B7" name="Violation_Display_FK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9569D64F-26FD-A6E2-CD8D-C21F114A0C2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A195ECA2-467D-F3F2-87F2-8C8608C9BEC2" name="Violation_SensorEvent_FK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E23266DC-4CFE-A6FE-B307-32D0B8B2A717"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5207D16-B1DE-28A4-7B05-37B3F91AF861" name="Violation_TrainSchedule_FK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="203A7BB3-6459-5232-FDA2-1E2E332C1A9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

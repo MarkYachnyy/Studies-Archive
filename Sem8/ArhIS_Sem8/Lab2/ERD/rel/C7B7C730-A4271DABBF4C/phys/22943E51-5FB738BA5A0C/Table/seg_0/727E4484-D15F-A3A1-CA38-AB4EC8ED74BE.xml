@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="Advertisement" directorySegmentName="seg_0" id="727E4484-D15F-A3A1-CA38-AB4EC8ED74BE">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<schemaObject>39BCFE36-2BB8-36AD-299D-5C1D168252F0</schemaObject>
+<database>706F0F6B-5DAC-4CB6-5B44-8C869140B098</database>
+<filegroup>369AD193-4BEC-66F6-F7E0-8F0D96BF9EE7</filegroup>
+<schema>1</schema>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="displayOrder" id="0B56CEBC-1190-C90E-6460-9504DFB54CB5">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="id" id="1B0C94BA-D5E9-2EE6-CA1D-1E068684B0A4">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="text" id="1F2D570E-43F2-472C-816E-FA2183AD034C">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<collation>Cyrillic_General_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="companyINN" id="356C756C-DBA8-38B8-065B-4080B0DDAE1D">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<collation>Cyrillic_General_CI_AS</collation>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="displayId" id="A2CCA2A6-D1AB-50C6-55BB-7650C36DFFEE">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.ColumnProxySqlServerv2k5" name="companyName" id="D565CC43-6B0E-3AE8-5857-010E99C5A935">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<collation>Cyrillic_General_CI_AS</collation>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="Advertisement_Display_FK" id="5D92E230-5280-F2E0-118C-0D0DADA53068">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="Advertisement__IDX" id="B5ED0C57-C71A-D44A-722B-D469EAE19640">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<clustered>true</clustered>
+<fileGroup>369AD193-4BEC-66F6-F7E0-8F0D96BF9EE7</fileGroup>
+<recomputeStatistics>NO</recomputeStatistics>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

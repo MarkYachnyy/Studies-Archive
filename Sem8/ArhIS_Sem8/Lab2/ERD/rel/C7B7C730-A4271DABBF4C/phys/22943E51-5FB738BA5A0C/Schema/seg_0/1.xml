@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.SchemaSqlServerv2k5" name="dbo" directorySegmentName="seg_0" id="1">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>ArhisLab2</sourceObjSchema>
+<sourceObjName>dbo</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<schemaObject>39BCFE36-2BB8-36AD-299D-5C1D168252F0</schemaObject>
+<owner>706F0F6B-5DAC-4CB6-5B44-8C869140B098_dbo</owner>
+<database>706F0F6B-5DAC-4CB6-5B44-8C869140B098</database>
+<uid>1</uid>
+</SchemaSqlServerv2k5>

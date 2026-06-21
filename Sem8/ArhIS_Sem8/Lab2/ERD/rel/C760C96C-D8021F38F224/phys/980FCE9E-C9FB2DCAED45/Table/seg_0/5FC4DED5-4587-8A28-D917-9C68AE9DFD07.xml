@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="Display" directorySegmentName="seg_0" id="5FC4DED5-4587-8A28-D917-9C68AE9DFD07">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="scheduleId" id="1DFAA60F-35BE-C4A8-007D-C43FB67D0488">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="station" id="58F85801-6348-94B3-E2C3-1399C18ED1D3">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="serialNumber" id="953CD771-BEE2-8876-9715-73D21B13AB67">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="currentTime" id="9FC18257-6F12-5230-4965-4F895EF26F6F">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="lastSyncTime" id="C999443C-3F10-3F6F-E187-2AB6CA78E344">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="id" id="D1446CAC-9269-AF65-FB21-77F8A0DA0B7F">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="Display_Schedule_FK" id="36B02066-98D1-787F-906E-C79FA6C68E79">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="Display__IDX" id="BF86CDBB-242B-7F11-A3A0-AB8960335FF4">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:09:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

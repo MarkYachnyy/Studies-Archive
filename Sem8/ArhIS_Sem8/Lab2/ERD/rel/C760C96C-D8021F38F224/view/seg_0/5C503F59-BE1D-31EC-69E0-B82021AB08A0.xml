@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="5C503F59-BE1D-31EC-69E0-B82021AB08A0" name="ViolationReportView">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:59:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<ordsAlias>view_4</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[CREATE VIEW VIEW_ViolationsSummary AS
+SELECT 
+  d.station_id,
+  DATE(v.actualTime) AS violation_date,
+  v.type,
+  COUNT(*) AS violation_count,
+  AVG(TIMESTAMPDIFF(MINUTE, v.actualTime, v.plannedTime)) AS avg_delay_minutes,
+  MAX(TIMESTAMPDIFF(MINUTE, v.actualTime, v.plannedTime)) AS max_delay_minutes
+FROM Violation v
+JOIN SensorEvent se ON v.sensorEventId = se.id
+JOIN Sensor s ON se.sensorId = s.id
+JOIN Display d ON s.displayId = d.id  -- Сенсор → Табло → Станция
+GROUP BY d.station_id, DATE(v.actualTime), v.type;
+]]></userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="station_id" id="C7F90EBE-AD78-B0E2-E254-90C337A9EB24">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:00:13 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>UNKNOWN</dataType>
+<headerAlias>station_id</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="violation_date" id="88D2365E-28A6-DA41-7906-4343218B4C60">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:00:13 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>violation_date</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>violation_date</headerAlias>
+<expression>DATE(v.actualTime)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="type" id="33010B03-788F-CD04-473C-FC5887E0DE3B">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:00:13 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR (20)</dataType>
+<headerAlias>type</headerAlias>
+<reference>false</reference>
+<referencedColumn>C6DD12E3-AF94-D3E5-13A1-D87769CE9556</referencedColumn>
+<table>D934A002-E147-CA24-38D1-BB2215FF3E01</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="violation_count" id="7B6F9081-6CB7-1C54-1211-9E18E8AB4BD0">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:00:13 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>violation_count</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>violation_count</headerAlias>
+<expression>COUNT(*)</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="avg_delay_minutes" id="1E079093-C9C3-6C52-B9B2-A1632C5C7B8E">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:00:13 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>avg_delay_minutes</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>avg_delay_minutes</headerAlias>
+<expression>AVG(TIMESTAMPDIFF(MINUTE,v.actualTime,v.plannedTime))</expression>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="max_delay_minutes" id="481B431F-1530-259A-E181-0502AE2C4AFB">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 20:00:13 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>max_delay_minutes</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>max_delay_minutes</headerAlias>
+<expression>MAX(TIMESTAMPDIFF(MINUTE,v.actualTime,v.plannedTime))</expression>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D934A002-E147-CA24-38D1-BB2215FF3E01">
+<container>true</container>
+<tableName>Violation</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1E2BB017-FAE9-B741-B025-CD1CBE1575FC">
+<container>true</container>
+<tableName>SensorEvent</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2A8D8A21-010E-F9C0-3385-7C8EA77CEA3E">
+<container>true</container>
+<tableName>Sensor</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5FC4DED5-4587-8A28-D917-9C68AE9DFD07">
+<container>true</container>
+<tableName>Display</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C6DD12E3-AF94-D3E5-13A1-D87769CE9556">
+<columnName>type</columnName>
+<tableName>Violation</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BECEECEA-1838-BDD4-8739-5CBC9F2594CB">
+<columnName>plannedTime</columnName>
+<tableName>Violation</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D1446CAC-9269-AF65-FB21-77F8A0DA0B7F">
+<columnName>id</columnName>
+<tableName>Display</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D9C9FD44-6CA2-8329-F1FB-AF288DE9C008">
+<columnName>actualTime</columnName>
+<tableName>Violation</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C14BB138-3840-C5CD-93C4-5B55407ADD02">
+<columnName>id</columnName>
+<tableName>Sensor</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B220F1B0-7ADD-B2B0-5FD9-6EEE2CD58F63">
+<columnName>sensorEventId</columnName>
+<tableName>Violation</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6BA51A4B-DB12-B06D-43B4-8A1276BDA5F1">
+<columnName>sensorId</columnName>
+<tableName>SensorEvent</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CC1473CA-033C-BC5A-25E9-2224249D530E">
+<columnName>id</columnName>
+<tableName>SensorEvent</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5FC4DED5-4587-8A28-D917-9C68AE9DFD07" name="Display">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>4F5F99C9-85A3-966C-10E4-FAD179D80665</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="D1446CAC-9269-AF65-FB21-77F8A0DA0B7F">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>15EA5C3A-30E1-5F5C-67C4-FA194CE9BFB7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="currentTime" id="9FC18257-6F12-5230-4965-4F895EF26F6F">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>D136744A-9889-44F8-67D1-3A20B1629AAF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3E0F56C0-30C4-790F-5D00-7B69D122329C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="serialNumber" id="953CD771-BEE2-8876-9715-73D21B13AB67">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:23:49 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastSyncTime" id="C999443C-3F10-3F6F-E187-2AB6CA78E344">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:24:07 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3E0F56C0-30C4-790F-5D00-7B69D122329C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="station" id="58F85801-6348-94B3-E2C3-1399C18ED1D3">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:24:41 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F7F2009F-E89A-1A6A-57FF-5529014EC88C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="scheduleId" id="1DFAA60F-35BE-C4A8-007D-C43FB67D0488">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:33:45 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A2057B5E-CC41-61F2-3568-6C5725485E61" referredColumn="A3DC5668-DB4B-4A03-49B3-3ECAAE8ADC33"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF86CDBB-242B-7F11-A3A0-AB8960335FF4" name="Display__IDX">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>2D2717C6-D1D6-86D6-8E33-471DE00E3C19</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1446CAC-9269-AF65-FB21-77F8A0DA0B7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36B02066-98D1-787F-906E-C79FA6C68E79" name="Display_Schedule_FK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:34:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DFAA60F-35BE-C4A8-007D-C43FB67D0488"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

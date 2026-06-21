@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="92AD11E4-DED1-D0AC-BF25-AC5B9ADD00A0" schemaObject="39BCFE36-2BB8-36AD-299D-5C1D168252F0" name="TrainSchedule">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>TrainSchedule</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="7FAC19DF-3421-BB6F-E031-AAF871D0163F">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>TrainSchedule</sourceObjSchema>
+<sourceObjName>id</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trainId" id="3C208832-32E2-DE02-EC03-EDF5C7BE391C">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>TrainSchedule</sourceObjSchema>
+<sourceObjName>trainId</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="destinationStation" id="3918F46A-28A3-0906-DDD0-F0E1ADDCAA10">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>TrainSchedule</sourceObjSchema>
+<sourceObjName>destinationStation</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,100,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="plannedArrival" id="0F91E83D-BAC6-BB01-AB5A-8A89D29B358E">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>TrainSchedule</sourceObjSchema>
+<sourceObjName>plannedArrival</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="plannedDeparture" id="1039D7F2-2C4D-3114-C8DA-94602D72D03B">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>TrainSchedule</sourceObjSchema>
+<sourceObjName>plannedDeparture</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="scheduleId" id="B349EE2B-7BE9-D386-8401-14FA40D7A6B0">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>TrainSchedule</sourceObjSchema>
+<sourceObjName>scheduleId</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0FF74F5E-8CCB-59C6-E00D-FE74037D1E8F" referredColumn="0B7D2A8B-0062-BAF9-2ABA-C65E50A4D408"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF05A9C0-4F18-1E15-FB7C-5F31531D6B42" name="TrainSchedule__IDX">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>TrainSchedule__IDX</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FAC19DF-3421-BB6F-E031-AAF871D0163F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CAAACD2C-8469-D192-AA95-5A8470ED31F7" name="TrainSchedule_Schedule_FK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B349EE2B-7BE9-D386-8401-14FA40D7A6B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

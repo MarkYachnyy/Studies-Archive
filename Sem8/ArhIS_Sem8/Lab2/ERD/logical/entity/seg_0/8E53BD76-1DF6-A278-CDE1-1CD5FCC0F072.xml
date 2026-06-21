@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8E53BD76-1DF6-A278-CDE1-1CD5FCC0F072" name="Display">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:47:18 UTC</createdTime>
+<notes><![CDATA[if display.report_requested = True
+then collect the detected violations and send it to control panel
+and set display.report_requested to False]]></notes>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="5CE6AB9F-582D-845A-0E16-E9F372FF272A">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:47:28 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>B1D948A4-F7FF-CEFA-9582-41D2C3A8FD24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="currentTime" id="EA8541CB-3E99-4118-46F8-2C53A220F2FD">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:48:24 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>208D3F0A-2D95-095B-F98F-DCBDE62C9553</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="58C95758-BD79-F8D9-0548-38152A6FD044">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:59:17 UTC</createdTime>
+<generatorID>E387396C-E82E-19C3-7F8B-473E10B7734E</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<referedAttribute>83763730-7635-394E-7946-BC69BDA95DB8</referedAttribute>
+<use>0</use>
+<domain>B1D948A4-F7FF-CEFA-9582-41D2C3A8FD24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="6E5C4A8B-A724-6BE2-F41E-3A1C871C3A19">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 18:47:46 UTC</createdTime>
+<generatorID>69A25E0B-986D-0652-3052-524E90528088</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<referedAttribute>E1D8B055-78E8-0152-6387-455BCEE81B7B</referedAttribute>
+<use>0</use>
+<domain>B1D948A4-F7FF-CEFA-9582-41D2C3A8FD24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="station" id="AFC2B8C0-C82A-A317-535F-D598BC9A741B">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:06:10 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>2153299E-DB9D-3223-ABDE-90D6D1A2B643</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lastSyncTime" id="6E388F17-51C8-C69D-74A1-E83BA8A94951">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:12:33 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>208D3F0A-2D95-095B-F98F-DCBDE62C9553</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="serialNumber" id="430994D9-1406-3CBD-42EA-818C9452F784">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:13:32 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>DB6E63F3-9C0D-E437-70C5-D530B4B93FBE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="scheduleId" id="D778F553-9858-562A-E24D-1B06BE5DD6D5">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:19:11 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5219C08E-1C0D-8693-1859-03445939CD2E" name="Display PK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:47:31 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5CE6AB9F-582D-845A-0E16-E9F372FF272A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

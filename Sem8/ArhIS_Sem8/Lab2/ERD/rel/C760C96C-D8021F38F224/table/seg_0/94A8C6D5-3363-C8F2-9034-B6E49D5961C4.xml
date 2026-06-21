@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94A8C6D5-3363-C8F2-9034-B6E49D5961C4" name="TrainSchedule">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>93CE06A8-30FC-A54E-E95C-2B9C511BCD6C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B42EA81F-C8CF-E4A0-26C8-E5F2C5E5201F">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>13E5BF6B-DDB3-E642-BF73-C420A619572D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="trainId" id="CD1EB339-68D5-70D3-FA7D-AC5CCF123C6D">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>7568CFF2-5351-056B-3AC1-BB75BBA1880D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="destinationStation" id="DEEA46AF-5460-7B73-67EB-8B39E0B8BE65">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>D3507CF6-18A0-827D-B05D-43E8CB2F372F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F7F2009F-E89A-1A6A-57FF-5529014EC88C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="plannedArrival" id="854B906F-EAF5-7D15-C072-D6B3AB2965FA">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>B7A0A639-F368-0C94-5EB4-6101ABE27208</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3E0F56C0-30C4-790F-5D00-7B69D122329C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="plannedDeparture" id="8CCA9552-23B8-1CFF-47B5-4A7B1E084759">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>A774CC14-368D-C539-E50E-568D5169B5BF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3E0F56C0-30C4-790F-5D00-7B69D122329C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="scheduleId" id="4CF83C4A-EA72-79D1-4FC7-FB769FDD7E6C">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 12:10:03 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6BC97FFB-B418-D57E-EA7C-701E13287B64" referredColumn="A3DC5668-DB4B-4A03-49B3-3ECAAE8ADC33"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1A37596-5A21-96B3-B541-8EE8B34B5314" name="TrainSchedule__IDX">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>212F9373-28E7-1805-902D-48817F487320</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B42EA81F-C8CF-E4A0-26C8-E5F2C5E5201F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2171CE32-7144-880B-C59E-7463AB915F8E" name="TrainSchedule_Schedule_FK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 12:10:23 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CF83C4A-EA72-79D1-4FC7-FB769FDD7E6C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

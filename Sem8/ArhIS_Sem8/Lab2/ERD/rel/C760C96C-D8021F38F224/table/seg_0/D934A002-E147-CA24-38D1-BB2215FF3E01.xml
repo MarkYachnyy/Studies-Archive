@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D934A002-E147-CA24-38D1-BB2215FF3E01" name="Violation">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>26C33B4A-4F8E-CF26-E328-FDDBA1CA6B87</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="4772D1CF-4806-33AB-F6F1-D775C1D43B53">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>6BE1EFB5-93E5-6FDE-CC7A-6BCBD21692E0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="C6DD12E3-AF94-D3E5-13A1-D87769CE9556">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>1F2A867F-1244-1148-C1CC-1BF822CAA27E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>949539E5-405D-668F-D993-347CA0595AB3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="actualTime" id="D9C9FD44-6CA2-8329-F1FB-AF288DE9C008">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>D7C97742-FCC9-7197-CC24-1EBF34E096ED</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3E0F56C0-30C4-790F-5D00-7B69D122329C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="plannedTime" id="BECEECEA-1838-BDD4-8739-5CBC9F2594CB">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>05A84316-3E6B-DED1-9C01-12284335BF61</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3E0F56C0-30C4-790F-5D00-7B69D122329C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sensorEventId" id="B220F1B0-7ADD-B2B0-5FD9-6EEE2CD58F63">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>17B898B8-6D0E-3E37-AA9B-E7BF42B37E49</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C50FE571-4979-F747-5DED-289D8132F0B0" referredColumn="CC1473CA-033C-BC5A-25E9-2224249D530E"/>
+</associations>
+</Column>
+<Column name="trainScheduleId" id="CD4A919F-6E13-BE78-F3BE-98CE7B748131">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>9DAEB9F8-6289-5F7D-CDD7-B484036AED67</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3EBD0ADE-0C32-AED6-7C55-6B185372F531" referredColumn="B42EA81F-C8CF-E4A0-26C8-E5F2C5E5201F"/>
+</associations>
+</Column>
+<Column name="displayId" id="465667B5-0BA8-DB76-2302-8DE508DF9073">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:31:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="668B48CB-794D-A3F8-FD01-6EA7CA02A822" referredColumn="D1446CAC-9269-AF65-FB21-77F8A0DA0B7F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F637ACE6-4A8F-ACB1-B8B3-5F914247688F" name="Violation__IDX">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>BF9FC263-9A2B-7FF6-2E69-F04C3D60B282</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4772D1CF-4806-33AB-F6F1-D775C1D43B53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC647233-884D-9D43-BBE6-CF32DC15A3A3" name="Violation__UN">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:51:48 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B220F1B0-7ADD-B2B0-5FD9-6EEE2CD58F63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD552973-AADD-633B-E6FA-9361DCEB060B" name="Violation_SensorEvent_FK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 12:04:03 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B220F1B0-7ADD-B2B0-5FD9-6EEE2CD58F63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="571ADB67-9F65-1697-E458-AAF0303447B9" name="Violation_TrainSchedule_FK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 12:05:01 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD4A919F-6E13-BE78-F3BE-98CE7B748131"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D371B7F3-A2CA-63D6-8722-75DA95C44C1B" name="Violation_Display_FK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:53:16 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="465667B5-0BA8-DB76-2302-8DE508DF9073"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

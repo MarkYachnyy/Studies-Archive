@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B6F7A07D-F935-DE68-9D69-FAAF27B4B5C3" name="Violation">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:27:42 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="E1D8B055-78E8-0152-6387-455BCEE81B7B">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:35:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>B1D948A4-F7FF-CEFA-9582-41D2C3A8FD24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="type" id="1551024A-0B1D-90C5-C0D1-87DCBBA6E123">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:41:02 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>094D83A3-6FCE-FBA1-7AE3-3AAE55E12239</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="actualTime" id="E6C776BA-1322-6F2C-507C-172D994922C2">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:41:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>208D3F0A-2D95-095B-F98F-DCBDE62C9553</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="plannedTime" id="76AFB176-4409-DA30-4BF8-26F32AE912F7">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:42:06 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>208D3F0A-2D95-095B-F98F-DCBDE62C9553</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="EFF7538A-18AB-2713-8796-DD545CCB811B">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:57:03 UTC</createdTime>
+<generatorID>AB5FEDD1-833E-64B1-A183-E105AB2671B0</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>924AA11C-6D51-65B2-A29A-D4786BE2B2B0</referedAttribute>
+<use>0</use>
+<domain>B1D948A4-F7FF-CEFA-9582-41D2C3A8FD24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sensorEventId" id="C22F3C3E-FD4E-1478-6347-804AED6227E9">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 18:45:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>B1D948A4-F7FF-CEFA-9582-41D2C3A8FD24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="trainScheduleId" id="3EA0C70C-F79C-176E-3466-6236190C781B">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 18:45:14 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>208D3F0A-2D95-095B-F98F-DCBDE62C9553</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="displayId" id="FE576061-149C-8B81-2CE0-852BE673BA4C">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 18:53:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>B1D948A4-F7FF-CEFA-9582-41D2C3A8FD24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="14022FB5-4C4B-5AB8-5548-7D81D7ED8D48" name="Violation PK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:35:08 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E1D8B055-78E8-0152-6387-455BCEE81B7B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

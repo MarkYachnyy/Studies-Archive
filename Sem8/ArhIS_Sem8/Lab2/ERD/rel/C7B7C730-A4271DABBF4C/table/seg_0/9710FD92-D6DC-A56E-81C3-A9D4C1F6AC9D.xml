@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9710FD92-D6DC-A56E-81C3-A9D4C1F6AC9D" schemaObject="39BCFE36-2BB8-36AD-299D-5C1D168252F0" name="SensorEvent">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>SensorEvent</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="4F598CE9-DCE2-BFDE-04C1-8002FEBDEC71">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>SensorEvent</sourceObjSchema>
+<sourceObjName>id</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sensorId" id="634BBB39-1AB2-1F26-8F2C-A2647FB57233">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>SensorEvent</sourceObjSchema>
+<sourceObjName>sensorId</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8463EF1C-4EC2-59BE-A863-ED72BA5B3CD4" referredColumn="B52F40F5-B6F8-3554-471B-584C168EF820"/>
+</associations>
+</Column>
+<Column name="eventTime" id="83DC9687-8BDA-FE32-AE54-A812D83C398C">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>SensorEvent</sourceObjSchema>
+<sourceObjName>eventTime</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<dataTypePrecision>23</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,23,3</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eventType" id="2CC9D77B-E577-79B8-28E9-27A331D3CB4D">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>SensorEvent</sourceObjSchema>
+<sourceObjName>eventType</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1934B61E-2AA3-0732-15EA-8F2E7F597E95" name="SensorEvent__IDX">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>SensorEvent__IDX</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F598CE9-DCE2-BFDE-04C1-8002FEBDEC71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6B4EA83-392A-06B4-F391-C44865EA48FC" name="FK_ASS_1">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="634BBB39-1AB2-1F26-8F2C-A2647FB57233"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

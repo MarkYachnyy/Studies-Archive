@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2A8D8A21-010E-F9C0-3385-7C8EA77CEA3E" name="Sensor">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>40F5E34C-42C0-CA98-F6F8-3759419AB960</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C14BB138-3840-C5CD-93C4-5B55407ADD02">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>61D1089F-2BAA-FBFF-7AB7-8214FDAD9C29</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="active" id="46693037-2DFE-D966-79EA-2C4E0CB939C8">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:26:45 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>B08D0DA0-4E2D-C985-196C-000420805D74</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="serialNumber" id="DFD0A98C-ADDF-8DF2-6312-0EA19707A443">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:29:05 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modelName" id="1FFEC452-E19C-3AAE-91A0-CF36662F461A">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:29:29 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F7F2009F-E89A-1A6A-57FF-5529014EC88C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB45210F-33A7-1A05-F6D8-5DB566B415B6" name="Sensor__IDX">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>00D5FB02-7593-F6BF-BAF6-5A9D49A566D0</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C14BB138-3840-C5CD-93C4-5B55407ADD02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

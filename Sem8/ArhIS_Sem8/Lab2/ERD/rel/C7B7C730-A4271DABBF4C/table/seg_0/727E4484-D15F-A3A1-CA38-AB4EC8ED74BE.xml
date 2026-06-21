@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="727E4484-D15F-A3A1-CA38-AB4EC8ED74BE" schemaObject="39BCFE36-2BB8-36AD-299D-5C1D168252F0" name="Advertisement">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Advertisement</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="1B0C94BA-D5E9-2EE6-CA1D-1E068684B0A4">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Advertisement</sourceObjSchema>
+<sourceObjName>id</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="text" id="1F2D570E-43F2-472C-816E-FA2183AD034C">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Advertisement</sourceObjSchema>
+<sourceObjName>text</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>500</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,500,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="displayOrder" id="0B56CEBC-1190-C90E-6460-9504DFB54CB5">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Advertisement</sourceObjSchema>
+<sourceObjName>displayOrder</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="displayId" id="A2CCA2A6-D1AB-50C6-55BB-7650C36DFFEE">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Advertisement</sourceObjSchema>
+<sourceObjName>displayId</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<dataTypePrecision>19</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,19,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A531FD48-EB06-A64A-D218-1DF6F14B93F7" referredColumn="B5CB4A95-1093-441C-F850-AC4337DC2FCE"/>
+</associations>
+</Column>
+<Column name="companyName" id="D565CC43-6B0E-3AE8-5857-010E99C5A935">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Advertisement</sourceObjSchema>
+<sourceObjName>companyName</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,100,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="companyINN" id="356C756C-DBA8-38B8-065B-4080B0DDAE1D">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>Advertisement</sourceObjSchema>
+<sourceObjName>companyINN</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>100</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,100,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B5ED0C57-C71A-D44A-722B-D469EAE19640" name="Advertisement__IDX">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>dbo</sourceObjSchema>
+<sourceObjName>Advertisement__IDX</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B0C94BA-D5E9-2EE6-CA1D-1E068684B0A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D92E230-5280-F2E0-118C-0D0DADA53068" name="Advertisement_Display_FK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2CCA2A6-D1AB-50C6-55BB-7650C36DFFEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

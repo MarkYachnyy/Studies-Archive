@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D9819984-EE71-E54B-3027-80D6E51AC97B" name="Sensor">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:26:21 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="CB2AF15D-D05D-4D85-424A-9A71436D7FB0">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:30:19 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<use>0</use>
+<domain>B1D948A4-F7FF-CEFA-9582-41D2C3A8FD24</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="active" id="073BBD29-8D8F-706F-3FE6-A8FBD4F28C2E">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:45:55 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<domain>B08D0DA0-4E2D-C985-196C-000420805D74</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="modelName" id="63731B50-1084-1A9A-AE16-487BAC512101">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 18:44:24 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>2153299E-DB9D-3223-ABDE-90D6D1A2B643</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="serialNumber" id="4028B478-8059-A74B-AC65-9F5865B101F3">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 18:44:39 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>DB6E63F3-9C0D-E437-70C5-D530B4B93FBE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B64924B9-597D-414D-5804-B0BCB605C444" name="Sensor PK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 16:31:58 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="C760C96C-8BBD-1769-194A-D8021F38F224" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CB2AF15D-D05D-4D85-424A-9A71436D7FB0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

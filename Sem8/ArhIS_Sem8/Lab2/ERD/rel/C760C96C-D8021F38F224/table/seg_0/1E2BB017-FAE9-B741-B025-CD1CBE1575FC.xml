@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E2BB017-FAE9-B741-B025-CD1CBE1575FC" name="SensorEvent">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>BA95CF5C-FC66-DDE8-D825-52E8D7D34BBC</importedID>
+<afterCreate><![CDATA[CREATE OR REPLACE TRIGGER TRG_AutoViolationDetect
+AFTER INSERT ON SensorEvent
+FOR EACH ROW
+DECLARE
+  v_planned TIMESTAMP;
+  v_deviation_minutes NUMBER;
+  v_train_id BIGINT;
+BEGIN
+  SELECT plannedDeparture, id INTO v_planned, v_train_id
+  FROM TrainSchedule 
+  WHERE ABS(EXTRACT(EPOCH FROM (:NEW.eventTime - plannedDeparture))) / 30 < 2 
+  ORDER BY ABS(EXTRACT(EPOCH FROM (:NEW.eventTime - plannedDeparture))) 
+  LIMIT 1;
+  
+  IF v_planned IS NOT NULL THEN
+    v_deviation_minutes := EXTRACT(EPOCH FROM (:NEW.eventTime - v_planned)) / 30;
+    
+    IF ABS(v_deviation_minutes) > 0.5 THEN 
+      INSERT INTO Violation (
+        type, actualTime, plannedTime, sensorEventId, trainScheduleId
+      ) VALUES (
+        CASE 
+          WHEN v_deviation_minutes < 0 THEN 'EARLY_DEPARTURE'
+          ELSE 'LATE_DEPARTURE'
+        END,
+        :NEW.eventTime, v_planned, :NEW.id, v_train_id
+      );
+    END IF;
+  END IF;
+END;
+]]></afterCreate>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="CC1473CA-033C-BC5A-25E9-2224249D530E">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>C1B491F2-7E87-55D2-6B59-B881CA042297</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sensorId" id="6BA51A4B-DB12-B06D-43B4-8A1276BDA5F1">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>31BF5C16-FB22-E6DA-0D39-B09FD83BA2CA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A14788F-AE5A-BE55-3735-2140C25258B7" referredColumn="C14BB138-3840-C5CD-93C4-5B55407ADD02"/>
+</associations>
+</Column>
+<Column name="eventTime" id="40794031-924A-B3DA-506C-2CFC90C923E5">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>5969AE67-565F-5CE7-168A-F483338D5B95</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>3E0F56C0-30C4-790F-5D00-7B69D122329C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="eventType" id="C28150B2-9916-97BB-632D-19BE005424A5">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>29D4653B-EF58-2C3D-D83C-0717CDEF48B3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>949539E5-405D-668F-D993-347CA0595AB3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="00D62B72-B5E0-6FCE-C2CF-6918EDB7CA00" name="SensorEvent__IDX">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>F0117F06-2B60-14E9-7460-2E747973F80B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC1473CA-033C-BC5A-25E9-2224249D530E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01F5BF98-7495-C9EE-F300-170E17BC9052" name="FK_ASS_1">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BA51A4B-DB12-B06D-43B4-8A1276BDA5F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

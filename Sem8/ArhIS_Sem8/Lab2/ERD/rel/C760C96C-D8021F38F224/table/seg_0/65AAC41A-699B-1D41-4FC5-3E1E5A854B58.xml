@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="65AAC41A-699B-1D41-4FC5-3E1E5A854B58" name="Advertisement">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>0E7A604C-2E6F-65AB-7E29-D5D63FDA0A88</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="35C2ABD6-9CAA-3B38-FD31-B5AB448C1502">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>1971DDAF-933D-0970-B34D-0989D097BA13</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="text" id="EB492E47-E2C6-3192-C881-6260CF4D586B">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>9DC8C11E-44EC-0F02-FD72-EB0AB81626D1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ADF509AB-747B-EA01-27C5-EB8CB9920860</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="displayOrder" id="7FD6CBA8-051C-329E-54EC-BEA216BC4DC6">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>E75D7FB1-47E7-3F59-20C4-3DF566E8D09B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>38C8F0A3-A3DE-149B-9C68-451A32120253</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="displayId" id="426D452D-6C10-886B-226B-A7EA66BC851B">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 12:11:57 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<domain>6B5EB41F-E62D-3C92-3254-8458292A9A43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="29060AA6-A4EA-5F54-315A-45727A2BF90C" referredColumn="D1446CAC-9269-AF65-FB21-77F8A0DA0B7F"/>
+</associations>
+</Column>
+<Column name="companyName" id="8419536B-DD63-DA1B-B429-7886364C1A92">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:25:20 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F7F2009F-E89A-1A6A-57FF-5529014EC88C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="companyINN" id="8178B5A1-425F-5D32-F2FE-545111E8926A">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 19:25:31 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F7F2009F-E89A-1A6A-57FF-5529014EC88C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FFFE29EC-3BD4-DB69-B796-1850275DBD31" name="Advertisement__IDX">
+<sourceDDLFile>ERD.sql</sourceDDLFile>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<importedID>48D3295D-594B-8253-1B91-B61764A06545</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35C2ABD6-9CAA-3B38-FD31-B5AB448C1502"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA5C179D-DDE1-0E37-209F-30FF3686180B" name="Advertisement_Display_FK">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 12:13:18 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="426D452D-6C10-886B-226B-A7EA66BC851B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

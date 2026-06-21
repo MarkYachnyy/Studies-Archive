@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="ERD_Domains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_0" id="38C8F0A3-A3DE-149B-9C68-451A32120253">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>ERD_Domains</fileName>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Timestamp_0_0_0" id="3E0F56C0-30C4-790F-5D00-7B69D122329C">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>ERD_Domains</fileName>
+<logicalDatatype>LOGDT015</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="BIGINT_0_0_0" id="6B5EB41F-E62D-3C92-3254-8458292A9A43">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>ERD_Domains</fileName>
+<logicalDatatype>LOGDT027</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_20" id="949539E5-405D-668F-D993-347CA0595AB3">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<fileName>ERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_500" id="ADF509AB-747B-EA01-27C5-EB8CB9920860">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>500</dataTypeSize>
+<fileName>ERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100" id="F7F2009F-E89A-1A6A-57FF-5529014EC88C">
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 11:39:04 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<fileName>ERD_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

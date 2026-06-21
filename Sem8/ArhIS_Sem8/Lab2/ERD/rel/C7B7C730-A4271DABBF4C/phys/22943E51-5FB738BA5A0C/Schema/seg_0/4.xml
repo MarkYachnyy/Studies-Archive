@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaSqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.SchemaSqlServerv2k5" name="sys" directorySegmentName="seg_0" id="4">
+<sourceConnName>Conn1</sourceConnName>
+<sourceObjSchema>ArhisLab2</sourceObjSchema>
+<sourceObjName>sys</sourceObjName>
+<createdBy>marky</createdBy>
+<createdTime>2026-03-15 21:18:17 UTC</createdTime>
+<ownerDesignName>ERD</ownerDesignName>
+<database>706F0F6B-5DAC-4CB6-5B44-8C869140B098</database>
+<uid>4</uid>
+</SchemaSqlServerv2k5>
